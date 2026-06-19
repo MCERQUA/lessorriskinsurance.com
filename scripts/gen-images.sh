@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Generate all images for framingcontractorinsurance.com via HuggingFace FLUX.1-schnell
+# Generate all images for lessorriskinsurance.com via HuggingFace FLUX.1-schnell
 # Robust: retries up to 4 times, verifies each is a valid image >= 30KB
 set -uo pipefail
 
-OUT="/workspace/Websites/framingcontractorinsurance.com/public/images"
+OUT="/workspace/Websites/lessorriskinsurance.com/public/images"
 mkdir -p "$OUT"
 
 gen() {
@@ -39,40 +39,49 @@ gen() {
   return 1
 }
 
-# === 11 images — framing contractor operations ===
+# === 14 images — commercial property / lessor's risk operations ===
 
 gen "hero.jpg" \
-  "Photorealistic cinematic wide shot of a residential wood framing crew raising an exterior wall frame on a new house build. Workers in hi-vis vests and hard hats, nail guns, bright clear morning light, exposed studs and engineered floor trusses, organized jobsite with lumber package. Warm natural wood tones with deep forest-green and copper accents, high-end commercial construction photography, no text, no watermark" 4
+  "Photorealistic cinematic wide shot of a modern multi-tenant commercial building exterior, a clean three-story office and warehouse complex with large glass entrance, brick and metal facade, leased commercial space with a few parked delivery vans. Bright clear morning light, professional architectural real-estate photography, deep navy and warm stone tones with subtle gold accents, no text, no watermark" 4
 
-gen "framing-walls.jpg" \
-  "Photorealistic photo of two framing carpenters assembling a wood stud wall on the deck of a house under construction, measuring and nailing 2x6 studs, nail gun in action, neat sawhorses and lumber, blue sky. Professional construction photography, warm wood tones, shallow depth of field, no text" 4
+gen "commercial-building.jpg" \
+  "Photorealistic photo of a modern commercial multi-tenant building exterior, mix of warehouse and flex space with loading dock and glass storefront entrances, leased to small businesses. Bright daylight, clean landscaping, professional commercial real-estate photography, neutral tones with deep navy accents, no text" 4
 
-gen "truss-roof.jpg" \
-  "Photorealistic photo of roof trusses being set on a new home frame, crane lowering a wooden roof truss into place, framers guiding it on top plates, sunny day, structural roof skeleton. Professional commercial construction photography, warm tones, no text" 4
+gen "building-exterior.jpg" \
+  "Photorealistic architectural photo of the exterior of a premium commercial office building, classical columns at the entrance, stone and glass facade, symmetric design, blue sky, professional real-estate photography, refined navy and warm stone palette, no text" 4
 
-gen "jobsite.jpg" \
-  "Photorealistic elevated photo of an active residential framing jobsite: a partially framed two-story house skeleton with stacked lumber, chop saw station, air compressor, framers working on multiple levels. Clear daylight, organized site, professional construction photography, no text" 4
+gen "commercial-lobby.jpg" \
+  "Photorealistic photo of a clean modern commercial building lobby interior, polished floors, reception desk, glass and metal details, warm professional lighting, common area of a leased office building. High-end commercial interior photography, neutral tones with navy accents, no text" 4
 
-gen "crew-portrait.jpg" \
-  "Photorealistic professional portrait of a confident framing contractor wearing a hard hat, safety glasses and branded flannel shirt, arms crossed, standing on a home building site with framed walls behind him. Warm friendly genuine trustworthy expression, golden hour light, commercial photography, no text" 4
+gen "property-manager.jpg" \
+  "Photorealistic professional portrait of a confident commercial property manager wearing a tailored blazer, arms crossed, standing in the bright lobby of a leased office building. Warm friendly genuine trustworthy expression, soft professional light, corporate photography, no text" 4
 
-gen "commercial-build.jpg" \
-  "Photorealistic photo of a large commercial or multifamily building under construction, steel-and-wood framing, multiple framers on scaffolding installing floor and wall systems, crane in background, bright industrial daylight. Professional commercial construction photography, no text" 4
+gen "rooftop-hvac.jpg" \
+  "Photorealistic photo of large commercial rooftop HVAC units and ductwork on the flat roof of an office or warehouse building, blue sky, mechanical equipment, slight elevation. Professional commercial building systems photography, industrial daylight, no text" 4
 
-gen "scaffold-safety.jpg" \
-  "Photorealistic photo of framing carpenters working safely on pump-jack scaffolding and a framed two-story wall, wearing fall protection harnesses and hard hats, installing sheathing. Bright daylight, focus on safety, professional construction photography, no text" 4
+gen "skyline.jpg" \
+  "Photorealistic cinematic wide shot of a modern commercial real-estate skyline, mid-rise office and warehouse buildings under a clear sky, golden hour light. Professional urban architectural photography, deep navy shadows and warm gold highlights, no text, no watermark" 4
 
-gen "lumber-package.jpg" \
-  "Photorealistic photo of a fresh lumber package neatly stacked on a residential jobsite, dimensional lumber and engineered I-joists on dunnage, a framers truck in the background, blue sky. Professional commercial photography, warm natural wood tones, no text" 4
+gen "maintenance-vehicle.jpg" \
+  "Photorealistic photo of a white commercial maintenance truck or van parked outside a multi-tenant commercial building, branded work vehicle, property management tools, bright daylight. Professional commercial photography, clean realistic, no text" 4
 
-gen "blueprint-tools.jpg" \
-  "Photorealistic close-up of rolled architectural house plans and blueprints resting on a sawhorse next to a framing square, pencil, tape measure and a framing nailer, soft warm light, shallow depth of field. Professional commercial photography, no text" 4
+gen "maintenance-staff.jpg" \
+  "Photorealistic photo of two commercial building maintenance workers in uniforms inspecting a building mechanical room or HVAC system, one with a clipboard, professional and safety-conscious. Bright industrial interior light, professional commercial photography, no text" 4
 
-gen "nail-gun-action.jpg" \
-  "Photorealistic action close-up of a framing carpenter firing a pneumatic nail gun into a top plate, wood grain and sawdust visible, gloved hands, bright jobsite light, sharp detail. Professional construction photography, warm tones, no text" 4
+gen "warehouse-property.jpg" \
+  "Photorealistic photo of a multi-tenant commercial warehouse property exterior, several roll-up loading dock doors, leased to small businesses and contractors, parked box trucks, clear daylight. Professional commercial real-estate photography, neutral industrial tones, no text" 4
+
+gen "tenant-gl.jpg" \
+  "Photorealistic photo of a commercial landlord and tenant shaking hands in a leased office or warehouse space, reviewing a lease document on a tablet, professional business setting. Warm professional light, commercial real-estate photography, no text" 4
+
+gen "tenant-fire.jpg" \
+  "Photorealistic dramatic photo of a commercial fire-damaged warehouse interior after a fire, charred beams, soot on walls, water on the floor, investigation scene, no active flames. Somber documentary photography, dark dramatic lighting, no text" 4
+
+gen "lh1-class-code.jpg" \
+  "Photorealistic close-up of commercial real-estate lease documents, building keys, and a tablet showing a property insurance policy on a desk in a bright modern office, shallow depth of field. Professional commercial photography, navy and gold tones, no text" 4
 
 gen "og-image.jpg" \
-  "Photorealistic cinematic wide banner image of a framing crew raising a wall on a new home build, warm natural wood tones, professional commercial construction photography, wide composition, no text, no watermark" 4
+  "Photorealistic cinematic wide banner image of a modern multi-tenant commercial building exterior at golden hour, professional commercial real-estate photography, wide composition, deep navy and warm gold tones, no text, no watermark" 4
 
 echo "=== ALL IMAGE GENERATION ATTEMPTS COMPLETE ==="
 ls -la "$OUT"
