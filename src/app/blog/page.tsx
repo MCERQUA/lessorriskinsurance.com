@@ -9,14 +9,14 @@ import { SITE } from "@/lib/site";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Framing Contractor Insurance Blog — Guides & Insights",
+  title: "Lessor's Risk Insurance Blog — Guides & Insights",
   description:
-    "Practical insurance guidance for framing & rough-carpentry contractors: general liability, workers' comp (class 5403), builder's risk, tools & equipment, and commercial auto.",
+    "Practical insurance guidance for commercial property owners: Lessor's Risk Only (LRO/LH-1), commercial property, premises liability, equipment breakdown, and tenant-caused losses.",
   alternates: { canonical: `${SITE.url}/blog` },
   openGraph: {
-    title: "Framing Contractor Insurance Blog | Contractors Choice Agency",
+    title: "Lessor's Risk Insurance Blog | Contractors Choice Agency",
     description:
-      "Practical insurance guidance for framing contractors: general liability, workers' comp, builder's risk, tools & equipment, and commercial auto.",
+      "Practical insurance guidance for commercial landlords: Lessor's Risk Only (LRO/LH-1), commercial property, premises liability, equipment breakdown, and tenant-caused losses.",
     url: `${SITE.url}/blog`,
   },
 };

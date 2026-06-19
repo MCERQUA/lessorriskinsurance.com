@@ -48,16 +48,16 @@ export default function AboutPage() {
             <FadeIn>
               <span className="pill-clay">About us</span>
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
-                Built by a contractor,{" "}
+                Built for the building,{" "}
                 <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">
-                  for framers
+                  and the owner
                 </span>
                 .
               </h1>
               <p className="mt-6 lead">
-                Framing Contractor Insurance is the trades-focused division of Contractors
-                Choice Agency — founded in 2005 by Josh Cotner, a former contractor who knows
-                exactly what happens when a height exclusion shows up in a fall-claim denial.
+                Lessor&rsquo;s Risk Insurance is the commercial-property division of Contractors
+                Choice Agency — founded in 2005 by Josh Cotner, who knows exactly what happens
+                when a tenant-caused fire meets a generic policy that tries to deny the loss.
               </p>
               <div className="mt-7 flex flex-col sm:flex-row gap-3">
                 <Link href="/quote" className="btn-primary">Get a quote <ArrowRight className="h-5 w-5" /></Link>
@@ -67,8 +67,8 @@ export default function AboutPage() {
             <FadeIn direction="left">
               <div className="rounded-t-[12rem] rounded-b-3xl overflow-hidden border-4 border-white shadow-warm-lg">
                 <img
-                  src="/images/crew-portrait.jpg"
-                  alt="A framing contractor on a residential build site"
+                  src="/images/property-manager.jpg"
+                  alt="A professional commercial property manager in a leased building lobby"
                   className="w-full h-[360px] md:h-[440px] object-cover"
                   loading="lazy"
                 />
@@ -98,11 +98,12 @@ export default function AboutPage() {
           <div className="container-tight">
             <FadeIn className="max-w-2xl mb-12">
               <span className="eyebrow"><span className="h-px w-8 bg-clay" />Our story</span>
-              <h2 className="mt-3 h-section">From the jobsite to the agency.</h2>
+              <h2 className="mt-3 h-section">From the building to the agency.</h2>
               <p className="mt-4 lead">
-                Josh Cotner swung a hammer, read plans, and pulled permits before founding CCA in 2005.
-                That background is why we understand what&rsquo;s at stake when a framer falls and the
-                carrier cites a height exclusion — or when a lumber package walks off the site overnight.
+                Josh Cotner worked with commercial property owners before founding CCA in 2005.
+                That background is why we understand what&rsquo;s at stake when a tenant&rsquo;s welding
+                operation starts a fire and the carrier tries to deny the loss — or when the rooftop
+                HVAC fails and the building goes dark.
               </p>
             </FadeIn>
             <div className="space-y-6">

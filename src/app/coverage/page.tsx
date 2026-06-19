@@ -10,9 +10,9 @@ import Link from "next/link";
 import { MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Framing Contractor Insurance — National Coverage, All 50 States",
+  title: "Lessor's Risk Insurance — National Coverage, All 50 States",
   description:
-    "Contractors Choice Agency writes framing contractor insurance in all 50 states — Texas and the Sun Belt, Southeast, Rocky Mountain, Pacific Northwest, Great Lakes, Northeast, and everywhere framers work.",
+    "Contractors Choice Agency writes lessor's-risk and commercial property insurance in all 50 states — Texas and the Sun Belt, Southeast, Northeast, California, Midwest, Pacific Northwest, Rocky Mountain, and everywhere commercial property owners lease.",
   alternates: { canonical: `${SITE.url}/coverage` },
 };
 
@@ -28,24 +28,24 @@ export default function CoveragePage() {
 
   const faqs = buildPageFaqs([
     {
-      q: "Do you only insure framing contractors in certain regions?",
-      a: "No. Contractors Choice Agency is licensed in all 50 states and writes framing contractor programs for crews anywhere in the country — Texas and the Sun Belt, Southeast, Rocky Mountain, Pacific Northwest, Great Lakes, Northeast, and everywhere in between.",
+      q: "Do you only insure commercial property owners in certain regions?",
+      a: "No. Contractors Choice Agency is licensed in all 50 states and writes lessor's-risk and commercial property programs for building owners anywhere in the country — Texas and the Sun Belt, Southeast, Northeast, California, Midwest, Pacific Northwest, Rocky Mountain, and everywhere in between.",
     },
     {
-      q: "Can you write coverage if my crews work across multiple states?",
-      a: "Yes. Because we're licensed nationwide, a single program can follow your crews across state lines — GL, workers' comp, builder's risk, and tools coverage coordinated without gaps.",
+      q: "Can you write coverage if I own buildings across multiple states?",
+      a: "Yes. Because we're licensed nationwide, a single program can follow your portfolio across state lines — LRO, commercial property, equipment breakdown, and umbrella coordinated without gaps.",
     },
     {
-      q: "Do you understand the risks of framing in hurricane and wildfire zones?",
-      a: "Yes. We have markets that write wind, named-storm, and WUI exposures and structure your builder's risk and property coverage so you're protected during the build in coastal, mountain, and interface zones.",
+      q: "Do you understand the risks of owning property in hurricane and wildfire zones?",
+      a: "Yes. We have markets that write wind, named-storm, and wildfire-interface exposures and structure your commercial property and LRO coverage so you're protected in coastal, mountain, and interface zones.",
     },
     {
       q: "How fast can I get a quote and certificate in my state?",
-      a: "Typically 15 minutes for a standard program. Once bound, we turn around additional-insured certificates, waivers of subrogation, and license bonds usually within minutes — wherever you're building.",
+      a: "Typically 15 minutes for a standard program. Once bound, we turn around certificates of insurance and additional-insured endorsements usually within minutes — wherever your building is.",
     },
     {
       q: "Do regional building codes affect my coverage?",
-      a: "They can. Wind, seismic, wildfire, and energy-code requirements vary regionally and influence both how you frame and how the risk is underwritten. We account for your region's code environment when structuring your program.",
+      a: "They can. Wind, seismic, wildfire, and freeze exposures vary regionally and influence both how the building is rated and how the risk is underwritten. We account for your region's code environment when structuring your program.",
     },
   ], 20);
 
@@ -61,13 +61,13 @@ export default function CoveragePage() {
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 National reach.{" "}
                 <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">
-                  All 50 states, every framing market.
+                  All 50 states, every commercial market.
                 </span>
               </h1>
               <p className="mt-6 lead max-w-2xl mx-auto">
-                Contractors Choice Agency places framing contractor insurance programs in all 50 states —
-                from Texas and Sun-Belt production framers to Pacific Northwest and Rocky Mountain crews to
-                Northeast remodel and addition work.
+                Contractors Choice Agency places lessor&rsquo;s-risk and commercial property insurance programs
+                in all 50 states — from Texas and Sun Belt industrial owners to Northeast multi-tenant and
+                California warehouse landlords to Midwest distribution centers.
               </p>
             </FadeIn>
           </div>
@@ -78,7 +78,7 @@ export default function CoveragePage() {
           <div className="container-tight">
             <FadeIn className="max-w-2xl mb-10">
               <span className="eyebrow"><span className="h-px w-8 bg-clay" />Where we write</span>
-              <h2 className="mt-3 h-section">Framing regions we serve.</h2>
+              <h2 className="mt-3 h-section">Commercial property regions we serve.</h2>
             </FadeIn>
             <div className="grid sm:grid-cols-2 gap-4">
               {AZ_REGIONS.map((region, i) => (
@@ -98,7 +98,7 @@ export default function CoveragePage() {
               <div className="rounded-3xl bg-espresso text-cream p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <p className="font-heading font-extrabold text-2xl">Featured regions</p>
-                  <p className="text-cream/75 mt-1">Dedicated pages for key framing contractor regions.</p>
+                  <p className="text-cream/75 mt-1">Dedicated pages for key commercial property regions.</p>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   {LOCATIONS.map((l) => (
@@ -126,7 +126,7 @@ export default function CoveragePage() {
                   Licensed and writing in all 50 states
                 </h2>
                 <p className="mt-3 text-mocha max-w-2xl mx-auto leading-relaxed">
-                  Whether your crew frames in Texas, the Southeast, the Mountain West,
+                  Whether you own a building in Texas, the Southeast, the Northeast,
                   or anywhere in between — one agent, one coordinated program. NPN #8608479.
                 </p>
                 <Link href="/quote" className="btn-primary mt-6">
