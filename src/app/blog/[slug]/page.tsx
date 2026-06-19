@@ -106,8 +106,8 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="prose-warm mt-10" dangerouslySetInnerHTML={{ __html: html }} />
 
               <div className="mt-12 p-7 rounded-3xl bg-espresso text-cream">
-                <p className="font-heading font-extrabold text-cream text-xl">Need this coverage for your crew?</p>
-                <p className="text-cream/75 mt-2 text-sm">Get a real quote in about 15 minutes — we shop A-rated specialty trades markets.</p>
+                <p className="font-heading font-extrabold text-cream text-xl">Need this coverage for your building?</p>
+                <p className="text-cream/75 mt-2 text-sm">Get a real quote in about 15 minutes — we shop A-rated specialty property markets.</p>
                 <div className="mt-5 flex flex-col sm:flex-row gap-3">
                   <Link href="/quote" className="btn-primary">Get a quote</Link>
                   <a href={SITE.phoneHref} className="btn-secondary !text-cream !border-white/20 !bg-white/10 hover:!bg-white/20">{SITE.phone}</a>

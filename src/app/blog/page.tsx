@@ -44,16 +44,16 @@ export default function BlogPage() {
             <FadeIn>
               <span className="pill-clay">Blog & insights</span>
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
-                Framing contractor insurance,{" "}
+                Lessor&rsquo;s risk insurance,{" "}
                 <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">
                   decoded
                 </span>
               </h1>
               <p className="mt-5 lead max-w-2xl mx-auto">
-                Plain-English guides on the coverage that matters for framing
-                crews — general liability, workers&rsquo; comp, builder&rsquo;s
-                risk, and the tools floaters that pay when gear walks off the
-                jobsite.
+                Plain-English guides on the coverage that matters for commercial
+                property owners — Lessor&rsquo;s Risk Only (LRO/LH-1), commercial
+                property, premises liability, and the equipment-breakdown coverage
+                that pays when the rooftop HVAC fails.
               </p>
             </FadeIn>
           </div>
@@ -72,7 +72,7 @@ export default function BlogPage() {
                       <article className="grid md:grid-cols-2 gap-0 rounded-[2rem] overflow-hidden bg-white border border-adobe shadow-card hover:shadow-card-hover transition-all">
                         <div className="relative overflow-hidden">
                           <img
-                            src={featured.image || "/images/framing-walls.jpg"}
+                            src={featured.image || "/images/commercial-building.jpg"}
                             alt={featured.title}
                             className="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
@@ -131,7 +131,7 @@ export default function BlogPage() {
 
         <CTABand
           title="Have a coverage question we didn't answer?"
-          description="Get a straight answer — and a real quote — in about 15 minutes."
+          description="Get a straight answer — and a real quote — in about 15 minutes. We shop A-rated specialty property markets."
         />
       </main>
       <Footer />
