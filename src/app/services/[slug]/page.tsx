@@ -41,17 +41,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
   const url = `${SITE.url}/services/${slug}`;
   return {
-    title: `${service.title} for Framing Contractors`,
+    title: `${service.title} for Commercial Landlords`,
     description: service.description,
     keywords: service.keywords ? [...service.keywords] : undefined,
     alternates: { canonical: url },
     openGraph: {
-      title: `${service.title} for Framing Contractors | Contractors Choice Agency`,
+      title: `${service.title} for Commercial Landlords | Contractors Choice Agency`,
       description: service.description,
       url,
-      images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: `${service.title} for framing contractors` }],
+      images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: `${service.title} for commercial landlords` }],
     },
-    twitter: { card: "summary_large_image", title: `${service.title} for Framing Contractors`, description: service.description },
+    twitter: { card: "summary_large_image", title: `${service.title} for Commercial Landlords`, description: service.description },
   };
 }
 
@@ -90,7 +90,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "InsuranceService",
-    name: `${service.title} for Framing Contractors`,
+    name: `${service.title} for Commercial Landlords`,
     description: service.description,
     url,
     provider: {
@@ -136,7 +136,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <h1 className="mt-4 font-heading font-extrabold text-espresso text-4xl md:text-5xl leading-[1.08] tracking-tight">
                   {service.title}{" "}
                   <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">
-                    for framing contractors
+                    for commercial landlords
                   </span>
                 </h1>
                 {detail && (
@@ -157,7 +157,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <div className="rounded-t-[10rem] rounded-b-3xl overflow-hidden border-4 border-white shadow-warm-lg">
                   <img
                     src={heroImg}
-                    alt={`${service.title} — framing contractor operations`}
+                    alt={`${service.title} — commercial property owner operations`}
                     className="w-full h-[300px] md:h-[360px] object-cover"
                     loading="lazy"
                   />

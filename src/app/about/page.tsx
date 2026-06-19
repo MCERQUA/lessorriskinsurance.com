@@ -6,26 +6,26 @@ import { Stats } from "@/components/sections/Stats";
 import { CTABand } from "@/components/sections/CTABand";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE, CREDENTIALS } from "@/lib/site";
-import { ArrowRight, HardHat, ShieldCheck, Award, Handshake } from "lucide-react";
+import { ArrowRight, Building2, ShieldCheck, Award, Handshake } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Framing Contractor Insurance | Contractors Choice Agency",
+  title: "About Lessor's Risk Insurance | Contractors Choice Agency",
   description:
-    "Framing Contractor Insurance is the trades-focused division of Contractors Choice Agency, founded in 2005 by former contractor Josh Cotner. General liability, workers' comp, builder's risk, and tools coverage for framing crews. Licensed all 50 states.",
+    "Lessor's Risk Insurance is the commercial-property division of Contractors Choice Agency, founded in 2005 by Josh Cotner. LRO/LH-1, commercial property, premises liability, equipment breakdown, and umbrella for building owners who lease to tenants. Licensed all 50 states.",
   alternates: { canonical: `${SITE.url}/about` },
 };
 
 const values = [
-  { icon: HardHat, title: "Trades-first, always", desc: "Josh spent years in the trades before starting the agency. We speak the language of framing because we know what happens when coverage fails at claim time." },
-  { icon: ShieldCheck, title: "Coverage that closes the gaps", desc: "Height exclusions, stolen tools, and jobsite lumber theft — we address the exposures standard markets miss or exclude." },
-  { icon: Award, title: "A-rated markets only", desc: "We shop carriers with the financial strength and trades experience to be there when a fall or fire claim hits." },
-  { icon: Handshake, title: "Honest, no-pressure advice", desc: "If you don't need a line of coverage, we'll tell you. We earn trust by being straight about what your crew actually requires." },
+  { icon: Building2, title: "Property-first, always", desc: "Josh founded CCA in 2005 after years working with commercial property. We understand buildings — because we know what happens when a tenant-caused loss meets the wrong policy form." },
+  { icon: ShieldCheck, title: "Coverage that closes the gaps", desc: "Tenant-caused fires, equipment breakdown, and common-area liability — we address the exposures standard markets miss or exclude." },
+  { icon: Award, title: "A-rated markets only", desc: "We shop carriers with the financial strength and commercial-property experience to be there when a tenant fire or HVAC failure hits." },
+  { icon: Handshake, title: "Honest, no-pressure advice", desc: "If you don't need a line of coverage, we'll tell you. We earn trust by being straight about what your building actually requires." },
 ];
 
 const timeline = [
-  { year: "2005", title: "Contractors Choice Agency founded", desc: "Josh Cotner opens CCA in Chandler, AZ, after years working in the trades — built to insure contractors the right way." },
-  { year: "20 yrs", title: "Expanded to specialty trades markets", desc: "After placing programs for dozens of contractor categories, CCA deepens its focus on framing and rough-carpentry crews with unique risk profiles." },
-  { year: "Today", title: "Dedicated framing contractor division", desc: "Framing Contractor Insurance focuses CCA's expertise on framers — crews where falls, nail-gun injuries, and jobsite theft are the real risks." },
+  { year: "2005", title: "Contractors Choice Agency founded", desc: "Josh Cotner opens CCA in Chandler, AZ, built to insure commercial property and contractor operations the right way." },
+  { year: "20 yrs", title: "Expanded to commercial property markets", desc: "After placing programs across dozens of property categories, CCA deepens its focus on commercial landlords — building owners who lease to tenants with real risk profiles." },
+  { year: "Today", title: "Dedicated lessor's risk division", desc: "Lessor's Risk Insurance focuses CCA's expertise on commercial property owners — where tenant-caused fire, equipment breakdown, and premises liability are the real risks." },
 ];
 
 export default function AboutPage() {
