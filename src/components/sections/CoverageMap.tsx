@@ -18,11 +18,11 @@ export function CoverageMap() {
               Where we write
             </span>
             <h2 className="mt-3 h-section">
-              Framing contractor coverage.{" "}
+              Lessor&rsquo;s risk coverage.{" "}
               <span className="text-clay">All 50 states.</span>
             </h2>
             <p className="mt-4 lead">
-              From Texas and Sun-Belt production framers to Pacific Northwest and Rocky Mountain crews, Contractors Choice Agency writes framing contractor insurance in every state where residential and commercial framing operates.
+              From Texas and Sun Belt industrial owners to Northeast multi-tenant and California warehouse landlords, Contractors Choice Agency writes lessor&rsquo;s-risk and commercial property insurance in every state where commercial real estate operates.
             </p>
 
             <ul className="mt-7 space-y-3">
@@ -47,18 +47,18 @@ export function CoverageMap() {
           <FadeIn direction="left">
             <div className="relative rounded-t-[12rem] rounded-b-3xl overflow-hidden border-4 border-white shadow-warm-lg">
               <img
-                src="/images/commercial-build.jpg"
-                alt="Active framing jobsite — national framing contractor coverage"
+                src="/images/commercial-building.jpg"
+                alt="Multi-tenant commercial building — national lessor's risk coverage"
                 className="w-full h-[360px] md:h-[440px] object-cover"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/55 via-espresso/10 to-transparent" />
               <div className="absolute bottom-0 inset-x-0 p-7">
                 <p className="font-heading font-extrabold text-cream text-2xl leading-tight">
-                  National coverage for framing contractors.
+                  National coverage for commercial property owners.
                 </p>
                 <p className="text-cream/80 text-sm mt-1">
-                  Writing framing contractor programs in all 50 states since 2005.
+                  Writing lessor&rsquo;s-risk programs in all 50 states since 2005.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {LOCATIONS.map((l) => (

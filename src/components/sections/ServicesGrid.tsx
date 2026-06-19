@@ -23,17 +23,17 @@ export function ServicesGrid() {
           </span>
           <h2 className="mt-3 h-section">
             Coverage built specifically for{" "}
-            <span className="text-clay">framing contractors</span>.
+            <span className="text-clay">commercial landlords</span>.
           </h2>
           <p className="mt-4 lead">
-            Standard markets exclude work at height and misclassify carpentry crews. We build programs designed for the way framers actually work.
+            Standard markets mishandle tenant-caused losses and exclude equipment breakdown. We build programs designed for the way building owners actually lease and operate.
           </p>
         </FadeIn>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {SERVICES.map((service, i) => {
             const Icon = ICONS[service.icon as keyof typeof ICONS] ?? ShieldCheck;
-            const isFeatured = service.slug === "general-liability";
+            const isFeatured = service.slug === "lessors-risk";
             return (
               <FadeIn key={service.slug} delay={(i % 4) * 0.05}>
                 <Link
