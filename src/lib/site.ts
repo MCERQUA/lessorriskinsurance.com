@@ -1,14 +1,14 @@
 // Centralized site data — used across nav, footer, schema, CTAs
-// Framing Contractor Insurance — wood framing / rough carpentry contractors
+// Lessor's Risk Insurance — for building/property owners who lease commercial space
 
 export const SITE = {
-  name: "Framing Contractor Insurance",
-  legalName: "Framing Contractor Insurance (by Contractors Choice Agency)",
-  domain: "framingcontractorinsurance.com",
-  url: "https://framingcontractorinsurance.com",
-  tagline: "Insurance for Wood Framing & Rough Carpentry Contractors",
+  name: "Lessor's Risk Insurance",
+  legalName: "Lessor's Risk Insurance (by Contractors Choice Agency)",
+  domain: "lessorriskinsurance.com",
+  url: "https://lessorriskinsurance.com",
+  tagline: "Insurance for Building Owners Who Lease to Commercial Tenants",
   description:
-    "Specialized commercial insurance for framing contractors and rough carpentry crews — general liability, workers' comp (class 5403), builder's risk, tools & equipment floaters, commercial auto, and commercial property. Fall, nail-gun, and saw exposures underwritten right. Licensed all 50 states.",
+    "Specialized commercial insurance for property owners who lease commercial space — Lessor's Risk Only (LRO / LH-1), commercial property, premises general liability, property management E&O, equipment breakdown, umbrella, commercial auto, and workers' comp. Tenant-caused fire and bodily-injury exposures underwritten right. Licensed all 50 states.",
   phone: "844-967-5247",
   phoneAlt: "855-336-7189",
   phoneHref: "tel:+18449675247",
@@ -40,76 +40,76 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
   {
+    slug: "lessors-risk",
+    title: "Lessor's Risk Only (LRO / LH-1)",
+    short: "The core coverage for commercial landlords",
+    description:
+      "Lessor's Risk Only — the LH-1 class program built for building owners who lease commercial space. Covers tenant-caused bodily injury and property damage, including fire damage from a tenant's operations, so a single tenant loss doesn't land on the owner.",
+    icon: "Building2",
+    keywords: ["lessors risk only insurance", "LRO insurance", "LH-1 class code", "lessors risk landlord insurance", "commercial landlord liability insurance"],
+  },
+  {
+    slug: "commercial-property",
+    title: "Commercial Property Insurance",
+    short: "The building — structure, roof & improvements",
+    description:
+      "All-risk coverage for the building itself — structure, roof, mechanical systems, and tenant improvements — written for the construction type, occupancy, and protection class of a commercial property leased to multiple tenants.",
+    icon: "Factory",
+    keywords: ["commercial property insurance landlord", "building insurance commercial landlord", "commercial property coverage", "lessors property insurance", "building owner property insurance"],
+  },
+  {
     slug: "general-liability",
     title: "General Liability Insurance",
-    short: "For framing & rough carpentry operations",
+    short: "Premises liability for the owner/landlord",
     description:
-      "Third-party bodily injury and property damage protection for your framing crews, jobsites, and subcontracted work — including products-completed operations and the GC certificates that get you onto the project.",
+      "Premises liability protection for the building owner — slips and falls in common areas, parking-lot injuries, and third-party claims arising from the property you own and lease out to commercial tenants.",
     icon: "ShieldCheck",
-    keywords: ["framing contractor general liability", "rough carpentry insurance", "framing subcontractor GL", "CG 00 01 framing", "framer liability insurance"],
+    keywords: ["landlord general liability", "premises liability insurance landlord", "commercial property owner GL", "lessors liability insurance", "slip and fall landlord insurance"],
   },
   {
-    slug: "workers-compensation",
-    title: "Workers' Compensation",
-    short: "Class 5403 carpentry — fall & saw exposures",
+    slug: "property-management-eando",
+    title: "Property Management E&O",
+    short: "Errors in managing, leasing & maintenance",
     description:
-      "Coverage for the injury patterns unique to framing crews — falls from height, nail-gun and saw lacerations, struck-by and material-handling injuries — with correct class 5403 coding so you're not overpaying or underinsured.",
-    icon: "HardHat",
-    keywords: ["framing contractor workers comp", "class 5403 workers compensation", "carpentry workers comp", "framer fall injury insurance", "nail gun injury workers comp"],
+      "Errors & omissions coverage for property owners and managers — claims from leasing mistakes, maintenance oversights, tenant disputes, and the day-to-day decisions that can turn into a negligence lawsuit.",
+    icon: "FileCheck",
+    keywords: ["property management errors and omissions", "property management E&O insurance", "landlord professional liability", "property manager insurance", "real estate management E&O"],
   },
   {
-    slug: "commercial-auto",
-    title: "Commercial Auto Insurance",
-    short: "Trucks, trailers & lumber delivery",
+    slug: "boiler-machinery",
+    title: "Boiler & Machinery / Equipment Breakdown",
+    short: "HVAC, elevators, boilers & electrical",
     description:
-      "Coverage for the pickup trucks, dump trailers, and lumber haulers that move your crew and materials between jobsites — including hired/non-owned and loading liability.",
-    icon: "Truck",
-    keywords: ["framing contractor commercial auto", "contractor truck insurance", "lumber delivery insurance", "trailer insurance carpenter", "hired non owned auto contractor"],
-  },
-  {
-    slug: "builders-risk",
-    title: "Builder's Risk Insurance",
-    short: "The structure & materials you're framing",
-    description:
-      "Course-of-construction coverage for the building you're framing — lumber packages, installed materials, and labor — against fire, wind, theft, and vandalism while the project is open to loss.",
-    icon: "Building2",
-    keywords: ["builders risk framing contractor", "course of construction insurance", "framing phase insurance", "lumber theft insurance jobsite", "soft cost builders risk"],
-  },
-  {
-    slug: "inland-marine-equipment",
-    title: "Tools & Equipment / Inland Marine",
-    short: "Nail guns, saws, compressors & trailers",
-    description:
-      "Scheduled tools-and-equipment coverage for the pneumatic nailers, miter saws, generators, and compressors that walk off jobsites — plus installation floaters that cover materials in transit to the frame.",
+      "Equipment breakdown coverage for the systems that keep a commercial building running — boilers, chillers, elevators, electrical panels, and rooftop HVAC — where a mechanical or electrical failure can cost tens of thousands and shut down tenant operations.",
     icon: "Wrench",
-    keywords: ["framing tools insurance", "contractor tools and equipment floater", "inland marine carpenter", "stolen tools insurance", "installation floater framing"],
-  },
-  {
-    slug: "property",
-    title: "Commercial Property Insurance",
-    short: "Shop, yard, office & inventory",
-    description:
-      "All-risk property coverage for the framer's shop, storage yard, prefab wall-panel facility, and lumber/inventory — built for the combustible loading and hot-work exposures of a wood operation.",
-    icon: "Factory",
-    keywords: ["framer commercial property insurance", "carpenter shop insurance", "wall panel plant insurance", "lumber yard property insurance", "contractor property coverage"],
+    keywords: ["boiler and machinery insurance", "equipment breakdown insurance commercial", "HVAC breakdown coverage landlord", "elevator insurance building", "commercial property equipment breakdown"],
   },
   {
     slug: "umbrella-excess-liability",
     title: "Umbrella / Excess Liability",
     short: "Limits to $10M+",
     description:
-      "Layered limits above your GL, auto, and employers' liability — essential when a fall, a framed-structure fire, or a multi-party jobsite loss could otherwise exhaust your primary coverage.",
+      "Layered limits above your LRO, general liability, and auto — essential when a tenant-caused fire, a serious common-area injury, or a catastrophic structural loss could otherwise exhaust your primary coverage and reach your other assets.",
     icon: "Umbrella",
-    keywords: ["framing contractor umbrella insurance", "excess liability carpenter", "contractor umbrella policy", "high limit liability framing", "jobsite liability umbrella"],
+    keywords: ["commercial landlord umbrella insurance", "excess liability property owner", "lessors risk umbrella", "high limit liability landlord", "commercial property umbrella policy"],
   },
   {
-    slug: "contractors-bonds",
-    title: "Contractor's License & Surety Bonds",
-    short: "License, permit & performance bonds",
+    slug: "commercial-auto",
+    title: "Commercial Auto Insurance",
+    short: "Property management & maintenance vehicles",
     description:
-      "The bonds that keep you legal and competitive — state contractor license bonds, permit bonds, and bid/performance bonds for the GCs and developers who require them before you set the first plate.",
-    icon: "FileCheck",
-    keywords: ["framing contractor license bond", "contractor surety bond", "performance bond carpenter", "permit bond framing", "bid bond contractor"],
+      "Coverage for the trucks and vans your property-management and maintenance crews use to service the building — including hired/non-owned vehicles when employees drive their own cars between properties.",
+    icon: "Truck",
+    keywords: ["commercial auto insurance property management", "landlord vehicle insurance", "maintenance truck insurance", "property management fleet insurance", "hired non owned auto landlord"],
+  },
+  {
+    slug: "workers-compensation",
+    title: "Workers' Compensation",
+    short: "Building employees & maintenance staff",
+    description:
+      "Workers' comp for the building employees and maintenance staff on your payroll — porters, groundskeepers, handymen, and on-site managers — coded to the correct class code so you're not overpaying or underinsured.",
+    icon: "HardHat",
+    keywords: ["workers compensation property owner", "building maintenance workers comp", "property management workers compensation", "landlord employee insurance", "janitorial workers comp class code"],
   },
 ] as const;
 
@@ -119,71 +119,71 @@ export const LOCATIONS = [
     name: "Texas & the Southwest",
     region: "TX · NM · AZ",
     blurb:
-      "The busiest framing market in the country. We insure Texas and Southwest framing crews running high-volume residential production, master-planned communities, and fast turnaround on slab-on-grade builds.",
+      "Fast-growing Sun Belt commercial real estate markets. We insure Texas and Southwest building owners leasing industrial, flex, and retail space to contractors, trades, and manufacturers across high-growth metros.",
   },
   {
     slug: "southeast",
-    name: "U.S. Southeast",
-    region: "Florida · Georgia · Carolinas",
+    name: "Southeast (Florida & Atlanta)",
+    region: "FL · GA · Carolinas",
     blurb:
-      "Hurricane-zone framing underwriting for Southeast crews — wind and named-storm exposure, Florida building code compliance, and high-volume coastal and inland residential production.",
+      "Southeast commercial property owners — warehouse, retail, and multi-tenant buildings in Atlanta, Florida, and the Carolinas. Programs that account for wind, named-storm, and high-occupancy retail exposures.",
   },
   {
-    slug: "rocky-mountain",
-    name: "Rocky Mountain West",
-    region: "Colorado · Idaho · Utah",
+    slug: "new-york-northeast",
+    name: "New York & the Northeast",
+    region: "NY · NJ · PA · New England",
     blurb:
-      "Front-Range and Intermountain West framing operations. Programs sized for crews serving the region's booming residential and multifamily construction with snow and elevation exposures.",
+      "Northeast commercial property owners running dense multi-tenant buildings, mixed-use, and older urban stock in New York, New Jersey, and New England. Coverage that meets strict city requirements and older-building exposures.",
+  },
+  {
+    slug: "california-west",
+    name: "California & the West Coast",
+    region: "California",
+    blurb:
+      "California and West Coast commercial property owners — warehouse, flex, retail, and mixed-use buildings. Programs built for seismic exposure, wildfire-interface locations, and the state's demanding insurance environment.",
+  },
+  {
+    slug: "chicago-midwest",
+    name: "Chicago & the Midwest",
+    region: "IL · MI · OH · IN",
+    blurb:
+      "Midwest commercial property owners leasing industrial, warehouse, and retail space across Chicago, Detroit, and the Great Lakes. Coverage sized for the region's manufacturing and distribution tenant mix.",
   },
   {
     slug: "pacific-northwest",
     name: "Pacific Northwest",
-    region: "Oregon · Washington",
+    region: "OR · WA",
     blurb:
-      "PNW framing contractors running wet-climate, seismic-zone builds. Coverage that accounts for tight energy-code framing, engineered lumber, and year-round wet jobsite conditions.",
+      "PNW commercial property owners — warehouse, tech-flex, and multi-tenant buildings in Seattle and Portland. Programs built for the region's wet-climate maintenance exposure and booming industrial-leasing market.",
   },
   {
-    slug: "desert-west",
-    name: "Desert West",
-    region: "Arizona · Nevada",
+    slug: "rocky-mountain",
+    name: "Rocky Mountain",
+    region: "CO · UT · ID",
     blurb:
-      "Phoenix, Las Vegas, and Tucson framing operations. Programs for high-volume desert residential production, slab construction, and rapid crew mobilization across master-planned developments.",
+      "Front-Range and Intermountain West commercial property owners. Programs for the region's fast-growing warehouse, light-industrial, and retail leasing markets with snow and elevation exposures.",
   },
   {
-    slug: "great-lakes",
-    name: "Great Lakes & Midwest",
-    region: "Michigan · Ohio · Illinois · Indiana",
+    slug: "mid-atlantic",
+    name: "Mid-Atlantic (DC / VA / MD)",
+    region: "DC · VA · MD · DE",
     blurb:
-      "Midwest framing contractors serving suburban and rural residential markets. Coverage for seasonal build cycles, freeze/thaw framing conditions, and crew variability.",
-  },
-  {
-    slug: "northeast",
-    name: "Northeast & Mid-Atlantic",
-    region: "NY · NJ · PA · New England",
-    blurb:
-      "Northeast framers running dense residential, remodel, and addition work. Coverage that meets the region's strict licensing, winter build limitations, and historic-district requirements.",
-  },
-  {
-    slug: "california-west",
-    name: "California & West Coast",
-    region: "California",
-    blurb:
-      "Seismic-zone and wildfire-exposure underwriting for California framing contractors. Programs built for Title 24 framing, WUI builds, and the state's demanding CSLB licensing environment.",
+      "Mid-Atlantic commercial property owners in the DC, Virginia, and Maryland corridor. Coverage for mixed-use, office, and retail buildings leased to government contractors, professional services, and retail tenants.",
   },
 ] as const;
 
 export const CREDENTIALS = [
   { label: "Licensed in all 50 states", icon: "MapPin" },
   { label: "Founded 2005 — 20+ years", icon: "CalendarCheck" },
-  { label: "Former framer on staff", icon: "HardHat" },
+  { label: "Specialty lessor's-risk markets", icon: "Building2" },
   { label: "15-minute quote turnaround", icon: "Timer" },
   { label: "2-hour claims response", icon: "Zap" },
   { label: "A.M. Best A+ carrier partners", icon: "Award" },
 ] as const;
 
 export const STATS = [
-  { value: 600, suffix: "+", label: "Framing crews insured nationwide", prefix: "" },
-  { value: 20, suffix: "+", label: "Years insuring trades contractors", prefix: "" },
+  { value: 900, suffix: "+", label: "Commercial buildings insured nationwide", prefix: "" },
+  { value: 20, suffix: "+", label: "Years insuring property owners", prefix: "" },
   { value: 15, suffix: " min", label: "Average quote turnaround", prefix: "" },
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
@@ -191,23 +191,23 @@ export const STATS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Every general contractor we frame for needs a GL certificate with us named additional insured before we can roll. CCA turns those around in minutes and built a program that actually covers our falls and nail-gun claims — not the generic handyman policy our last broker sold us.",
-    name: "Marcus T.",
-    role: "Framing Company Owner",
+      "When a tenant's welding operation started a fire that damaged two bays of my warehouse, my old carrier tried to deny it as a tenant-caused loss. CCA had placed a proper LRO policy with the LH-1 class code and the claim paid. They understood the building-owner side of this from day one.",
+    name: "Raymond K.",
+    role: "Commercial Property Owner",
     location: "Texas",
   },
   {
     quote:
-      "When a lumber package walked off our jobsite overnight, the tools-and-equipment floater CCA set up paid out fast and we kept the schedule. They get that a framing crew lives and dies by its gear and its materials.",
-    name: "Daniela R.",
-    role: "Operations Manager",
-    location: "Florida",
+      "I lease flex space to a dozen contractors and was carrying a generic landlord policy with huge gaps. CCA rebuilt the whole program — LRO, commercial property, equipment breakdown, and an umbrella — for less than I was paying before. Real specialists.",
+    name: "Patricia M.",
+    role: "Multi-Tenant Building Owner",
+    location: "Arizona",
   },
   {
     quote:
-      "Our workers' comp was coded as generic construction and we were getting killed on premium. CCA re-classed us properly under 5403, documented our fall-protection program, and dropped our rate while increasing coverage. Wish we'd switched years ago.",
-    name: "Tyler J.",
-    role: "Crew Owner",
-    location: "Colorado",
+      "The rooftop HVAC on my retail center failed and the replacement plus business-interruption could have been brutal. The equipment-breakdown coverage CCA set up paid out fast and kept my tenants operating. They get what it means to own the building.",
+    name: "Daniel S.",
+    role: "Retail Center Owner",
+    location: "Florida",
   },
 ] as const;
