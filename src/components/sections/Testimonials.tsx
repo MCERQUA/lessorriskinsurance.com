@@ -11,10 +11,10 @@ export function Testimonials() {
         <FadeIn className="max-w-3xl mb-12 md:mb-16">
           <span className="eyebrow">
             <span className="h-px w-8 bg-clay" />
-            From framing contractors
+            From commercial property owners
           </span>
           <h2 className="mt-3 h-section">
-            Framing crews that found{" "}
+            Building owners who found{" "}
             <span className="text-clay">coverage that actually pays</span>.
           </h2>
         </FadeIn>

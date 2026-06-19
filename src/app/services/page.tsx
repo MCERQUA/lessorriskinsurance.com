@@ -15,14 +15,14 @@ const ICONS = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "Framing Contractor Insurance Coverage & Services",
+  title: "Lessor's Risk Insurance Coverage & Services",
   description:
-    "Eight lines of insurance built for framing & rough-carpentry contractors: general liability, workers' comp, commercial auto, builder's risk, tools & equipment, property, umbrella, and bonds. Licensed all 50 states.",
+    "Eight lines of insurance built for commercial property owners: Lessor's Risk Only (LRO/LH-1), commercial property, premises liability, property management E&O, equipment breakdown, umbrella, commercial auto, and workers' comp. Licensed all 50 states.",
   alternates: { canonical: `${SITE.url}/services` },
   openGraph: {
-    title: "Framing Contractor Insurance Coverage | Contractors Choice Agency",
+    title: "Lessor's Risk Insurance Coverage | Contractors Choice Agency",
     description:
-      "General liability, workers' comp, builder's risk, tools & equipment, commercial auto, property, umbrella, and bonds — written specifically for framing contractors.",
+      "Lessor's Risk Only (LRO/LH-1), commercial property, premises liability, E&O, equipment breakdown, umbrella, auto, and workers' comp — written specifically for commercial landlords.",
     url: `${SITE.url}/services`,
   },
 };
@@ -49,15 +49,14 @@ export default function ServicesPage() {
               <h1 className="mt-5 font-heading font-extrabold text-espresso text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
                 Insurance built line-by-line for{" "}
                 <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">
-                  framing contractors
+                  commercial landlords
                 </span>
                 .
               </h1>
               <p className="mt-6 lead max-w-2xl mx-auto">
-                Each policy below addresses a specific exposure in framing —
-                from the height exclusions your GL shouldn&rsquo;t have to the
-                stolen nailers and lumber your tools floater and builder&rsquo;s
-                risk need to cover.
+                Each policy below addresses a specific exposure in leasing commercial
+                space — from the tenant-caused fires your LRO must cover to the
+                rooftop HVAC failures your equipment-breakdown policy is built for.
               </p>
             </FadeIn>
           </div>
@@ -68,7 +67,7 @@ export default function ServicesPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {SERVICES.map((s, i) => {
                 const Icon = ICONS[s.icon as keyof typeof ICONS] ?? ShieldCheck;
-                const featured = s.slug === "general-liability";
+                const featured = s.slug === "lessors-risk";
                 return (
                   <FadeIn key={s.slug} delay={(i % 3) * 0.06}>
                     <Link
@@ -115,7 +114,7 @@ export default function ServicesPage() {
 
         <CTABand
           title="Not sure which lines you need?"
-          description="Most framing contractors bundle GL + workers' comp + builder's risk + a tools floater into one coordinated program. We'll build the right mix in one call."
+          description="Most commercial landlords bundle LRO + commercial property + equipment breakdown + an umbrella into one coordinated program. We'll build the right mix in one call."
         />
       </main>
       <Footer />

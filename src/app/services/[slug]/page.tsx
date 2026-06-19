@@ -19,14 +19,14 @@ const ICONS = {
 
 // Per-service hero imagery (falls back to hero.jpg)
 const SERVICE_IMAGE: Record<string, string> = {
-  "general-liability": "/images/framing-walls.jpg",
-  "workers-compensation": "/images/scaffold-safety.jpg",
-  "commercial-auto": "/images/lumber-package.jpg",
-  "builders-risk": "/images/jobsite.jpg",
-  "inland-marine-equipment": "/images/blueprint-tools.jpg",
-  "property": "/images/commercial-build.jpg",
-  "umbrella-excess-liability": "/images/truss-roof.jpg",
-  "contractors-bonds": "/images/nail-gun-action.jpg",
+  "lessors-risk": "/images/commercial-building.jpg",
+  "commercial-property": "/images/building-exterior.jpg",
+  "general-liability": "/images/commercial-lobby.jpg",
+  "property-management-eando": "/images/property-manager.jpg",
+  "boiler-machinery": "/images/rooftop-hvac.jpg",
+  "umbrella-excess-liability": "/images/skyline.jpg",
+  "commercial-auto": "/images/maintenance-vehicle.jpg",
+  "workers-compensation": "/images/maintenance-staff.jpg",
 };
 
 export function generateStaticParams() {
