@@ -1,21 +1,28 @@
-# Competitor Landscape — Framing Contractor Insurance
+# Competitor Landscape — Lessor's Risk Insurance
 
-## Direct / adjacent (contractor insurance specialists)
-- National contractor-insurance agencies (Next Insurance, Hiscox, biBERK, CoverWallet) — broad,
-  generic small-business contractor coverage; often exclude height work and lack trades nuance.
-- Regional contractor brokers in TX/FL/Southeast framing markets.
-- Captive carriers (State Farm, Farmers) writing generic carpentry GL.
+## Direct / adjacent (commercial landlord / property insurance)
+- National commercial-insurance agencies (Hiscox, Next Insurance, biBERK, CoverWallet, Embroker) —
+  broad, generic small-business commercial property; often mishandle tenant-caused losses and
+  exclude equipment breakdown.
+- Regional commercial property brokers in TX/FL/Northeast/CA markets.
+- Captive carriers (State Farm, Farmers, Liberty Mutual) writing generic commercial property
+  without the LRO/LH-1 specialization.
+- Online landlord insurance aggregators — typically residential-focused, not true commercial LRO.
 
-## Our wedge (why framers switch to CCA)
-1. **GL without height exclusions** — most cheap online policies exclude 2- and 3-story work,
-   roof framing, and truss setting. We place height-friendly GL.
-2. **Correct class 5403 workers' comp coding** — competitors mis-classify framers, causing
-   overcharges or audit/claim problems.
-3. **Coordinated builder's risk + tools floater** — closes the two most common framing losses
-   (lumber theft, tool theft) that generic policies miss.
-4. **Fast certificates & additional-insured endorsements** — minutes, not days, for GCs.
-5. **Trades-native broker** — former contractor on staff; no explaining the jobsite.
+## Our wedge (why commercial landlords switch to CCA)
+1. **True LRO at LH-1** — most generic policies either miscode the building or try to deny
+   tenant-caused losses. We place real Lessor's Risk Only that covers tenant-caused fire and
+   damage the way it should.
+2. **Equipment breakdown included** — standard property excludes HVAC, elevator, boiler, and
+   electrical breakdown; we build it in as standard.
+3. **Specialty markets for high-hazard tenant mixes** — buildings leased to contractors,
+   restaurants, and manufacturers need markets that understand and price those exposures.
+4. **Coordinated program under one roof** — LRO + property + E&O + umbrella + auto + workers'
+   comp, with one point of contact and no gaps.
+5. **Fast certificates & additional-insured endorsements** — minutes, not days, for lenders
+   and tenants.
 
 ## Positioning
-Specialty trades broker for framers, a division of Contractors Choice Agency (est. 2005),
-licensed all 50 states, A-rated markets. Not a generic small-business insurer.
+Specialty commercial-property broker for landlords who lease to tenants, a division of
+Contractors Choice Agency (est. 2005), licensed all 50 states, A-rated markets. Not a generic
+small-business or residential landlord insurer.

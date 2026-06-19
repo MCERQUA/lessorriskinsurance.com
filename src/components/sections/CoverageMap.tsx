@@ -43,7 +43,7 @@ export function CoverageMap() {
             </div>
           </FadeIn>
 
-          {/* Jobsite visual card */}
+          {/* Property visual card */}
           <FadeIn direction="left">
             <div className="relative rounded-t-[12rem] rounded-b-3xl overflow-hidden border-4 border-white shadow-warm-lg">
               <img
