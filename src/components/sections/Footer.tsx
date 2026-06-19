@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock, Hammer, ShieldCheck } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Building2, ShieldCheck } from "lucide-react";
 import { SITE, SERVICES, LOCATIONS } from "@/lib/site";
 
 export function Footer() {

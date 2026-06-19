@@ -32,7 +32,7 @@ export function Hero() {
             <motion.div {...item}>
               <span className="pill-clay">
                 <span className="h-1.5 w-1.5 rounded-full bg-clay animate-pulse" />
-                Residential · Commercial · Multifamily
+                Warehouse · Retail · Flex · Mixed-Use
               </span>
             </motion.div>
 
@@ -40,12 +40,12 @@ export function Hero() {
               {...item}
               className="mt-5 font-heading font-extrabold text-espresso text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl leading-[1.05] tracking-tight"
             >
-              Framing contractor insurance that covers{" "}
-              <span className="relative z-10 bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">your biggest risks</span>.
+              Lessor&rsquo;s risk insurance that protects{" "}
+              <span className="relative z-10 bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">the building you own</span>.
             </motion.h1>
 
             <motion.p {...item} className="mt-6 lead max-w-xl">
-              General liability, workers&rsquo; comp, builder&rsquo;s risk, and tools floaters — purpose-built for framing and rough-carpentry crews. Fall, nail-gun, and saw exposures underwritten right. A-rated carriers. 15-minute quotes.
+              Lessor&rsquo;s Risk Only (LRO / LH-1), commercial property, premises liability, and equipment breakdown — purpose-built for owners who lease commercial space. Tenant-caused fire and bodily-injury exposures underwritten right. A-rated carriers. 15-minute quotes.
             </motion.p>
 
             <motion.div {...item} className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -92,7 +92,7 @@ export function Hero() {
               <div className="relative overflow-hidden rounded-t-[6rem] rounded-b-3xl shadow-warm-lg border-4 border-white">
                 <img
                   src="/images/hero.jpg"
-                  alt="Framing crew raising an exterior wall on a new home build"
+                  alt="Modern multi-tenant commercial building leased to tenants"
                   className="w-full h-[420px] md:h-[520px] object-cover"
                   loading="eager"
                 />
@@ -112,10 +112,10 @@ export function Hero() {
                   </div>
                   <div>
                     <p className="font-heading font-extrabold text-espresso text-2xl leading-none">
-                      600+
+                      900+
                     </p>
                     <p className="text-xs text-mocha mt-1 leading-snug">
-                      Framing crews insured — residential, commercial & multifamily
+                      Commercial buildings insured — warehouse, retail & flex
                     </p>
                   </div>
                 </div>

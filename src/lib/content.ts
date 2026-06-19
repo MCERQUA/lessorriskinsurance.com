@@ -1,4 +1,4 @@
-// Rich, niche-accurate content blocks for Framing Contractor Insurance.
+// Rich, niche-accurate content blocks for Lessor's Risk Insurance.
 
 import {
   PhoneCall, FileSearch, FileSignature, ShieldCheck,
@@ -17,30 +17,30 @@ export const PROCESS = [
   {
     step: "01",
     icon: PhoneCall,
-    title: "Tell us about your framing operation",
+    title: "Tell us about your building",
     description:
-      "15-min call or form. Crew size, annual framing revenue, typical project size, subs vs. W-2, and the lines your old carrier excluded.",
+      "15-min call or form. Property type, construction, tenant mix (contractors, retail, warehouse), square footage leased, and the lines your old carrier excluded.",
   },
   {
     step: "02",
     icon: FileSearch,
-    title: "We shop specialty trades markets",
+    title: "We shop lessor's-risk specialty markets",
     description:
-      "Markets that actually write framing contractors at class 5403 — not generic handyman carriers that exclude falls over 6 feet or subcontracted work.",
+      "Markets that actually write Lessor's Risk Only at LH-1 and understand tenant-caused exposures — not generic property carriers that exclude the losses you actually fear.",
   },
   {
     step: "03",
     icon: FileSignature,
-    title: "Bind a program built for framers",
+    title: "Bind a program built for property owners",
     description:
-      "GL + workers' comp + builder's risk + tools floater + auto, coordinated so there are no gaps between your operations and the structure you're framing.",
+      "LRO + commercial property + premises GL + equipment breakdown + umbrella, coordinated so there are no gaps between the building, the tenants, and your liability as owner.",
   },
   {
     step: "04",
     icon: ShieldCheck,
     title: "Certificates & claims that move fast",
     description:
-      "When a GC needs an additional-insured certificate before you roll, or a fall claim happens, you reach a person with context — not a queue. 2-hour response.",
+      "When a lender or tenant needs proof of coverage, or a tenant-caused fire happens, you reach a person with context — not a queue. 2-hour response.",
   },
 ] as const;
 
@@ -50,39 +50,39 @@ export const PROCESS = [
 export const WHY_CHOOSE = [
   {
     icon: ShieldCheck,
-    title: "GL that covers falls over 6 feet",
+    title: "True LRO at the LH-1 class code",
     description:
-      "Many cheap contractor policies exclude work over one or two stories. We place general liability that covers the real framing exposure — two- and three-story framing, roof work, and subcontracted operations.",
-  },
-  {
-    icon: HardHat,
-    title: "Workers' comp coded right at 5403",
-    description:
-      "Framing crews get mis-classed constantly. We assign the correct carpentry class codes and document your fall-protection program so your rate reflects your real — not worst-case — exposure.",
+      "Lessor's Risk Only is a specific program written at the LH-1 class code for building owners who lease commercial space. We place real LRO — not a generic landlord policy with the tenant-caused losses carved out.",
   },
   {
     icon: Building2,
-    title: "Builder's risk for the structure you frame",
+    title: "Tenant-caused fire & damage, covered",
     description:
-      "The lumber package, installed materials, and labor you've put into a frame are a real loss exposure. We write builder's risk that covers fire, theft, wind, and vandalism during construction.",
+      "The defining risk of leasing to tenants is a tenant operation causing a fire or damage. We structure your program so tenant-caused bodily injury and property damage fall on the right policy — not denied as a tenant loss.",
   },
   {
     icon: Wrench,
-    title: "Tools & equipment floaters that pay",
+    title: "Equipment breakdown for the systems that fail",
     description:
-      "Nail guns, miter saws, generators, and compressors walk off jobsites every day. We schedule your gear at replacement cost so a theft doesn't come out of your pocket.",
-  },
-  {
-    icon: Truck,
-    title: "Certificates & additional insureds, fast",
-    description:
-      "GCs and developers require certificates before you set the first plate. We turn additional-insured and waiver-of-subrogation endorsements around in minutes, not days.",
+      "Rooftop HVAC, boilers, chillers, elevators, and electrical panels fail constantly in commercial buildings. Standard property excludes internal breakdown — we build in equipment-breakdown coverage that pays.",
   },
   {
     icon: HardHat,
-    title: "Run by a former contractor",
+    title: "Premises liability for common areas",
     description:
-      "Josh Cotner knows how framing operations run and exactly what happens when coverage fails at claim time. You'll never have to explain a jobsite to us.",
+      "Slips and falls in parking lots, hallways, and common areas land on the building owner. We place premises general liability that covers third-party injuries on the property you own and lease out.",
+  },
+  {
+    icon: Truck,
+    title: "Lender & tenant certificates, fast",
+    description:
+      "Commercial lenders and tenants require certificates before closing or move-in. We turn additional-insured endorsements and proof-of-coverage around in minutes, not days.",
+  },
+  {
+    icon: Building2,
+    title: "Run by people who know property",
+    description:
+      "Josh Cotner and the CCA team have insured commercial property owners since 2005. We know what happens when a tenant-caused loss meets the wrong policy form — and how to prevent it.",
   },
 ] as const;
 
@@ -91,84 +91,84 @@ export const WHY_CHOOSE = [
    ============================================================ */
 export const HOME_FAQS: FAQItem[] = [
   {
-    q: "What kind of insurance does a framing contractor need?",
-    a: "A framing contractor typically needs a bundle built around the job: general liability, workers' compensation (class 5403 carpentry), builder's risk for the structure being framed, a tools & equipment floater for nail guns and saws, commercial auto for trucks and trailers, and an umbrella for higher-limit GC requirements. Most framers also need contractor license and surety bonds to stay legal and competitive.",
+    q: "What is Lessor's Risk Only (LRO) insurance?",
+    a: "Lessor's Risk Only — often written at the LH-1 class code — is a specialized property and liability program for building owners who lease commercial space to tenants. It covers the building itself and protects the owner when a tenant's operations cause a loss, most importantly a tenant-caused fire or bodily injury on the premises. LRO is the core coverage every commercial landlord should carry.",
   },
   {
-    q: "How much does framing contractor insurance cost?",
-    a: "Most framing contractors pay between $1,500 and $4,500 a year for a $1M/$2M general liability policy, depending on payroll, revenue, crew size, claims history, and whether you frame over two stories. Workers' comp is rated on payroll at the 5403 carpentry class. We quote the whole program in about 15 minutes and show you every market's price side by side.",
+    q: "How much does lessor's risk insurance cost?",
+    a: "Most commercial building owners pay between $750 and $2,500 a year for a base Lessor's Risk Only policy, depending on the building's value, construction type, square footage leased, tenant mix, and location. A full program — LRO, commercial property, equipment breakdown, and an umbrella — typically runs $2,500 to $9,000 a year. We quote the whole program in about 15 minutes.",
   },
   {
-    q: "What is the workers' comp class code for framing?",
-    a: "Wood framing and rough carpentry is most often coded under NCCI class 5403 (Carpentry). Some operations split out roof truss setting, siding, or interior finish carpentry into their own codes. Correct classification matters — wrong codes mean overpaying on premium or, worse, an audit bill and denied claim.",
+    q: "What does the LH-1 class code mean?",
+    a: "LH-1 is the ISO class code for a Lessor's Risk Only building — a commercial property leased to tenants where the only occupancy is as a landlord. Pricing and eligibility under LH-1 reflect that the owner is not operating a business in the building, only leasing space, which is why it's priced differently from an owner-occupied commercial property.",
   },
   {
-    q: "Does general liability cover falls from height?",
-    a: "It should — but many budget contractor policies exclude work over one or two stories or exclude roof work entirely. Framing is a height business, so we place GL that specifically covers two- and three-story framing, truss setting, and roof work without height exclusions.",
+    q: "Does lessor's risk cover a fire caused by a tenant?",
+    a: "Yes — that is the central purpose of Lessor's Risk Only. If a tenant's operations start a fire (welding, cooking, electrical, manufacturing) that damages the building or other tenants' space, LRO covers the building owner's resulting property loss and liability. This is exactly the exposure that generic policies often mishandle.",
   },
   {
-    q: "Do I need builder's risk if the GC already carries it?",
-    a: "Sometimes the project's master builder's risk covers your installed work, but gaps are common — especially around materials you've delivered but not yet installed, or theft from an unsecured jobsite. We review the GC's program and either confirm you're covered or write a framers-installation floater so your materials and labor are protected.",
+    q: "Do I need lessor's risk if my tenants carry their own insurance?",
+    a: "Yes. Your tenant's policy covers the tenant's own liability and property, but it does not cover the building you own — and if the tenant is uninsured, underinsured, or skips out after a loss, you're left holding the damage. LRO protects the building owner regardless of what the tenant carries. You should still require tenants to name you additional insured.",
   },
   {
-    q: "Does my policy cover my nail guns, saws, and compressors?",
-    a: "General liability and property do not cover your tools off-premises. Tools are an inland marine (tools & equipment) coverage. We schedule your gear — nail guns, miter saws, generators, air compressors, lasers — at replacement cost so theft from the jobsite or truck is covered.",
+    q: "What's the difference between lessor's risk and commercial property insurance?",
+    a: "Commercial property covers the physical building (structure, roof, systems) against fire, wind, theft, and similar perils. Lessor's Risk Only is a broader landlord program that layers premises liability and tenant-caused-loss coverage on top of property protection. Most commercial landlords need both, often bundled into one LRO program.",
   },
   {
-    q: "Are my subcontractors covered under my insurance?",
-    a: "Your GL does not extend to independent subcontractors — they should carry their own coverage and name you additional insured. If your subs are uninsured and cause a loss, you can be pulled in. We help you set up certificate tracking and additional-insured requirements so subcontracted work doesn't become your liability.",
+    q: "What tenant types make a building hardest to insure?",
+    a: "Higher-hazard tenants — contractors and trades with hot work, restaurants with cooking, manufacturers, auto-repair, and welding shops — increase fire and liability exposure and can push a building into specialty or surplus-lines markets. We know which markets write which tenant mixes and structure the program accordingly.",
   },
   {
-    q: "Can you get me a certificate of insurance today?",
-    a: "Yes. Once your program is bound we turn around additional-insured certificates, waivers of subrogation, and primary/non-contributory endorsements — usually within minutes. We know GCs won't let you start framing without proof of coverage.",
+    q: "Does lessor's risk cover slips and falls in common areas?",
+    a: "Premises liability — the liability component of a lessor's-risk program or a standalone general liability policy — covers third-party bodily injury in common areas you control: parking lots, hallways, stairwells, and entrances. We make sure the common-area exposure is addressed, not just the tenant suites.",
   },
   {
-    q: "What happens if lumber is stolen from my jobsite?",
-    a: "Lumber packages and installed materials are covered under builder's risk or an installation floater, while your tools are covered under a tools & equipment policy. We help you structure both so jobsite theft — one of the most common framing losses — doesn't come out of your margin.",
+    q: "Can you insure a building leased to contractors and trades?",
+    a: "Absolutely — that's one of our specialties. Buildings leased to framing, roofing, plumbing, electrical, and other contractors carry elevated fire and liability exposure from the tenant's operations, and we have markets that write exactly this class of business and price it correctly at LH-1.",
   },
   {
-    q: "Do you insure framing contractors in all 50 states?",
-    a: "Yes. Contractors Choice Agency is licensed in all 50 states and writes framing contractors from Texas and the Sun Belt to the Pacific Northwest, Rocky Mountain West, and Northeast.",
+    q: "Do you insure commercial property owners in all 50 states?",
+    a: "Yes. Contractors Choice Agency is licensed in all 50 states and writes lessor's-risk and commercial property programs for building owners nationwide, from Texas and Sun Belt industrial markets to Northeast multi-tenant and California warehouse owners.",
   },
   {
-    q: "How fast can I get a quote?",
-    a: "Typically 15 minutes on a call for a standard framing program. Complex operations — wall-panel plants, large multifamily, heavy subcontracted work — may take a day or two to place with the right markets, but we move fast and tell you the timeline up front.",
+    q: "How fast can I get a quote and a certificate?",
+    a: "Typically 15 minutes for a standard program on a call or form. Once bound, we turn around certificates of insurance and additional-insured endorsements for lenders, tenants, and partners — usually within minutes.",
   },
   {
-    q: "Will my rate go up if a framer gets hurt on the job?",
-    a: "A single workers' comp claim can affect your experience modifier and future premium. The best protection is correct class coding, a documented safety and fall-protection program, and a claims partner who manages the claim aggressively — all of which we help with. Good loss control keeps your experience mod down.",
+    q: "What limits should a commercial landlord carry?",
+    a: "Most commercial property owners carry $1M per occurrence / $2M general aggregate on liability, plus a $2M–$5M umbrella when the building value or tenant exposure warrants it. Property limits should equal the full replacement cost of the building. We size limits to your building, your tenants, and your lender's requirements.",
   },
   {
-    q: "What limits do framing contractors typically carry?",
-    a: "Most residential framers carry $1M per occurrence / $2M general aggregate for GL, plus an umbrella of $2M–$5M. Commercial and multifamily GCs often require $2M or $5M limits and additional insured status. We size limits to what your contracts actually demand.",
+    q: "Does the policy cover equipment breakdown — HVAC, elevators, boilers?",
+    a: "Standard commercial property excludes internal mechanical and electrical breakdown. We add equipment-breakdown (boiler & machinery) coverage so a failed rooftop HVAC unit, boiler, chiller, elevator motor, or electrical panel is covered — including the business-interruption loss from the resulting downtime.",
   },
   {
-    q: "Do I need commercial auto for my work truck?",
-    a: "Yes. A personal auto policy typically excludes business use and will deny a claim when you're hauling lumber or tools to a jobsite. Commercial auto covers your trucks, dump trailers, and lumber haulers, including hired/non-owned vehicles when employees drive their own trucks for you.",
+    q: "What happens if a tenant is injured on the property?",
+    a: "If a tenant or their employee is injured in a common area or due to a building condition you're responsible for, your premises liability responds. If the injury is in the tenant's own space or caused by their own operations, their own policy should respond. We structure the program so there are no gaps either way.",
   },
   {
-    q: "What if I frame in wildfire or hurricane zones?",
-    a: "Building in the WUI or on the coast adds underwriting complexity — wind, named-storm, and wildfire exposures affect builder's risk and property pricing. We have markets that write these zones and structure your program so you're covered during the build, not just after.",
+    q: "Will my premium go up after a tenant-caused fire?",
+    a: "A serious loss can affect renewal pricing and eligibility, especially if the program was mis-classified to begin with. The best protection is correct class coding (real LH-1), proper limits, documented tenant-lease requirements, and a claims partner who manages the loss aggressively — all of which we provide.",
   },
   {
-    q: "Can you insure framers with prior claims or cancellations?",
-    a: "Often, yes. If you've had a fall claim, a cancellation, or been declined, we have excess-and-surplus (E&S) markets for contractors other brokers won't touch. Bring your loss runs and we'll find a path.",
+    q: "Do I need to require tenants to name me additional insured?",
+    a: "Yes — strongly. Your lease should require every tenant to carry general liability and name the building owner as additional insured on a primary, non-contributory basis. We provide a sample lease-insurance clause and help you track certificates so tenant coverage sits beneath your program.",
   },
   {
-    q: "Do you cover wall-panel and truss manufacturing too?",
-    a: "Yes. If you've added off-site wall-panel or floor-truss fabrication, that's a different exposure (manufacturing property and products liability). We can extend your program to cover a panel plant or coordinate a separate manufacturing policy.",
+    q: "Can you cover older or mixed-use commercial buildings?",
+    a: "Often yes. Older buildings, mixed-use properties, and those with frame construction or deferred maintenance require specialty markets. We document the building's condition, protection, and occupancy to place coverage other brokers struggle to bind.",
   },
   {
-    q: "What is additional insured status and why do GCs want it?",
-    a: "Additional insured status extends your liability coverage to the GC or developer for your operations. GCs require it — along with a waiver of subrogation and primary/non-contributory endorsement — so that if a claim arises from your framing work, your policy responds first. We issue these endorsements routinely.",
+    q: "What is property management E&O and do I need it?",
+    a: "Property management errors & omissions covers claims from mistakes in managing, leasing, and maintaining the property — a missed repair, a leasing error, a tenant dispute. If you self-manage or run a management company, E&O is important; if a third party manages the building, they should carry it.",
   },
   {
-    q: "How are framing insurance premiums calculated?",
-    a: "General liability is usually rated on payroll or subcontractor cost; workers' comp on payroll by class code; tools & equipment on scheduled value; commercial auto on vehicles and drivers; builder's risk on the project value. We document your operation accurately so you're rated on real exposure, not a worst-case guess.",
+    q: "How are lessor's-risk premiums calculated?",
+    a: "Property coverage is rated on building replacement cost, construction type, protection class (fire), and occupancy. Liability is rated on square footage leased, tenant mix, and exposures. Equipment breakdown is rated on the systems covered. We document the building accurately so you're rated on real exposure, not a worst-case guess.",
   },
   {
-    q: "Why use a specialty framing insurance broker?",
-    a: "Framing is a height- and tool-heavy trade with fall, nail-gun, saw, and theft exposures that generic small-business carriers routinely exclude or misprice. A specialty broker knows the class codes, the height exclusions to avoid, the markets that write framers, and how to manage a framing claim — which means better coverage at a fairer price.",
+    q: "Why use a specialty lessor's-risk broker?",
+    a: "Commercial property leased to tenants — especially contractors, manufacturers, and food-service — has a specific risk profile that generic small-business carriers routinely exclude or misprice. A specialty broker knows the LH-1 class code, the markets that write each tenant mix, and how to manage a tenant-caused claim — which means better coverage at a fairer price.",
   },
 ];
 
@@ -178,52 +178,52 @@ export const HOME_FAQS: FAQItem[] = [
    ============================================================ */
 export const GENERAL_FAQS: FAQItem[] = [
   {
-    q: "How much does this coverage cost for a framing contractor?",
-    a: "Most framers pay $1,500–$4,500 a year for $1M/$2M general liability, with workers' comp rated on payroll at class 5403 and tools floaters based on scheduled gear. We quote the full program in about 15 minutes and show every market's price.",
+    q: "How much does lessor's-risk coverage cost for a commercial landlord?",
+    a: "Most commercial building owners pay $750–$2,500 a year for base Lessor's Risk Only, with the full program (LRO, property, equipment breakdown, umbrella) running $2,500–$9,000. Cost depends on building value, construction, tenant mix, and location. We quote the full program in about 15 minutes.",
   },
   {
-    q: "Do you insure framing contractors in all 50 states?",
-    a: "Yes. Contractors Choice Agency is licensed in all 50 states and writes framing crews from the Sun Belt and Texas to the Pacific Northwest, Rocky Mountain West, and Northeast.",
+    q: "Do you insure commercial property owners in all 50 states?",
+    a: "Yes. Contractors Choice Agency is licensed in all 50 states and writes lessor's-risk and commercial property programs from the Sun Belt and Texas to the Northeast, Midwest, and West Coast.",
   },
   {
     q: "How fast can I get a quote and a certificate?",
-    a: "About 15 minutes for a standard program. Once bound, we turn around additional-insured certificates, waivers of subrogation, and primary/non-contributory endorsements usually within minutes.",
+    a: "About 15 minutes for a standard program. Once bound, we turn around certificates of insurance and additional-insured endorsements for lenders, tenants, and partners — usually within minutes.",
   },
   {
-    q: "What workers' comp class code applies to framing?",
-    a: "Wood framing and rough carpentry is typically coded under NCCI class 5403 (Carpentry). Correct classification keeps you from overpaying or facing an audit surprise — and ensures claims aren't denied for misclassification.",
+    q: "What is the LH-1 class code?",
+    a: "LH-1 is the ISO class code for a Lessor's Risk Only building — a commercial property leased to tenants where the owner's only occupancy is as a landlord. Correct LH-1 classification keeps premium fair and ensures claims aren't denied for misclassification.",
   },
   {
-    q: "Does the policy cover falls from height?",
-    a: "We place general liability that specifically covers two- and three-story framing, truss setting, and roof work. Many budget contractor policies exclude work above one or two stories — we make sure yours does not.",
+    q: "Does lessor's risk cover a tenant-caused fire?",
+    a: "Yes — that is the central purpose of Lessor's Risk Only. If a tenant's operations cause a fire that damages the building or other tenants, LRO covers the owner's property loss and liability. Generic policies often mishandle this exact exposure.",
   },
   {
-    q: "Are my tools covered on the jobsite?",
-    a: "Tools are covered under a tools & equipment (inland marine) policy, not GL or property. We schedule nail guns, saws, generators, and compressors at replacement cost so jobsite and truck theft is covered.",
+    q: "Does the policy cover HVAC, elevators, and boiler breakdown?",
+    a: "Standard commercial property excludes internal breakdown. We add equipment-breakdown (boiler & machinery) coverage so failed HVAC, boilers, chillers, elevators, and electrical panels are covered, including the resulting business-interruption loss.",
   },
   {
-    q: "What limits should a framing contractor carry?",
-    a: "Most residential framers carry $1M/$2M GL with a $2M–$5M umbrella. Commercial and multifamily GCs often require $2M–$5M limits plus additional-insured status. We size limits to your actual contract requirements.",
+    q: "What limits should a commercial landlord carry?",
+    a: "Most carry $1M/$2M on liability with a $2M–$5M umbrella, and property limits equal to the building's full replacement cost. We size limits to your building value, tenant exposure, and lender requirements.",
   },
   {
-    q: "Do I need commercial auto for my work truck?",
-    a: "Yes — personal auto excludes business use and will deny claims when you haul lumber or tools. Commercial auto covers your trucks, trailers, and lumber haulers, including hired/non-owned vehicles.",
+    q: "Do I need commercial auto as a property owner?",
+    a: "If you or your maintenance crew drive company vehicles between properties, yes — personal auto excludes business use. We also add hired/non-owned coverage if employees drive personal vehicles for property work.",
   },
   {
-    q: "Can you cover framers with prior claims or cancellations?",
-    a: "Often, yes. We have excess-and-surplus (E&S) markets for contractors with loss runs, cancellations, or tough exposures that standard markets decline.",
+    q: "Can you cover buildings with prior claims or tough exposures?",
+    a: "Often, yes. We have excess-and-surplus (E&S) and specialty markets for buildings with loss runs, high-hazard tenant mixes, older construction, or other exposures that standard markets decline.",
   },
   {
-    q: "How do you handle subcontracted framing work?",
-    a: "Your GL doesn't cover independent subs — they should carry their own and name you additional insured. We set up certificate tracking and additional-insured requirements so subcontracted work doesn't become your liability.",
+    q: "Should tenants name me as additional insured?",
+    a: "Yes — your lease should require every tenant to carry general liability and name the building owner additional insured on a primary, non-contributory basis. We provide a sample lease clause and help track certificates.",
   },
   {
     q: "What happens if there's a claim?",
-    a: "You reach a person with context, not a queue. We respond within 2 hours, help you document the loss, and manage the claim with the carrier so it's paid correctly and your operation keeps moving.",
+    a: "You reach a person with context, not a queue. We respond within 2 hours, help you document the loss, and manage the claim with the carrier so it's paid correctly and your building keeps operating.",
   },
   {
-    q: "Why use a specialty framing insurance broker?",
-    a: "Framing has fall, nail-gun, saw, and theft exposures that generic carriers exclude or misprice. A specialty broker knows the class codes, the height exclusions to avoid, the markets that write framers, and how to manage a framing claim.",
+    q: "Why use a specialty lessor's-risk broker?",
+    a: "Commercial property leased to tenants has a specific risk profile that generic carriers exclude or misprice. A specialty broker knows the LH-1 class code, the markets that write each tenant mix, and how to manage a tenant-caused claim.",
   },
 ];
 
@@ -246,36 +246,36 @@ export function buildPageFaqs(specific: FAQItem[], count = 20): FAQItem[] {
    ============================================================ */
 export const LOCATION_FAQ_BASE: FAQItem[] = [
   {
-    q: "Are you licensed to insure framing contractors in this region?",
-    a: "Yes. Contractors Choice Agency is licensed in all 50 states, so we can bind and service framing contractor coverage in this region and coordinate certificates for work that crosses state lines.",
+    q: "Are you licensed to insure commercial property owners in this region?",
+    a: "Yes. Contractors Choice Agency is licensed in all 50 states, so we can bind and service lessor's-risk and commercial property coverage for building owners in this region and coordinate coverage across multi-state portfolios.",
   },
   {
-    q: "Do regional building codes affect my framing coverage?",
-    a: "They can. Wind, seismic, wildfire, and energy-code requirements vary regionally and influence both how you frame and how the risk is underwritten. We account for the region's code environment when structuring your program.",
+    q: "Do regional building codes and weather affect my coverage here?",
+    a: "They can. Wind, named-storm, wildfire, seismic, and freeze exposures vary regionally and influence both how the building is rated and what perils need attention. We account for the region's code and weather environment when structuring your program.",
   },
   {
-    q: "Can you meet local GC and developer insurance requirements here?",
-    a: "Yes. We routinely issue the additional-insured status, waivers of subrogation, and primary/non-contributory endorsements that local general contractors and developers require before you set the first plate.",
+    q: "Can you meet local lender and tenant insurance requirements here?",
+    a: "Yes. We routinely issue the certificates of insurance and additional-insured endorsements that local commercial lenders, tenants, and partners require before closing or move-in.",
   },
   {
-    q: "Do you handle seasonal framing cycles in this market?",
-    a: "We do. We right-size coverage and payroll reporting for seasonal crew scaling and can structure policies to match your region's build season, including short-term project and installed-material coverage.",
+    q: "Do you handle multi-building and portfolio owners in this market?",
+    a: "We do. We right-size and coordinate coverage across multiple properties — schedule of locations, blanket limits where it makes sense — and provide one point of contact for the whole portfolio.",
   },
   {
     q: "How do storm and weather exposure affect my premium here?",
-    a: "Wind, named-storm, hail, and freeze exposures vary by region and affect builder's risk, property, and auto pricing. We shop markets that write your region and structure deductibles so you're protected without overpaying.",
+    a: "Wind, named-storm, hail, wildfire, and freeze exposures vary by region and affect property and equipment-breakdown pricing. We shop markets that write your region and structure deductibles so you're protected without overpaying.",
   },
   {
-    q: "Can you add a project-specific builder's risk for a local build?",
-    a: "Yes. For larger or unusual local projects we can write a project-specific builder's risk policy that covers the structure and materials during construction, in addition to your ongoing program.",
+    q: "Can you add project-specific coverage for a renovation or build-out?",
+    a: "Yes. For a major renovation, addition, or tenant build-out we can write project-specific builder's risk or course-of-construction coverage alongside your ongoing lessor's-risk program.",
   },
   {
-    q: "Do you provide certificates to local building departments and GCs?",
-    a: "Yes. We supply the certificates of insurance, license bonds, and additional-insured endorsements that local building departments, GCs, and developers require — turned around fast.",
+    q: "Do you provide certificates to local lenders and tenants here?",
+    a: "Yes. We supply the certificates of insurance, additional-insured endorsements, and proof-of-coverage documents that local commercial lenders, tenants, and partners require — turned around fast.",
   },
   {
-    q: "Who services my policy if my crew works across multiple regions?",
-    a: "We do — coast to coast. Because we're licensed everywhere, a single program can follow your crews across regional lines, with one point of contact for certificates, endorsements, and claims.",
+    q: "Who services my policy if I own buildings in multiple regions?",
+    a: "We do — coast to coast. Because we're licensed everywhere, a single program can cover your entire portfolio across regional lines, with one point of contact for certificates, endorsements, and claims.",
   },
 ];
 
@@ -291,398 +291,341 @@ export interface ServiceDetail {
 }
 
 export const SERVICE_DETAIL: Record<string, ServiceDetail> = {
+  "lessors-risk": {
+    heroBlurb:
+      "Lessor's Risk Only — the LH-1 class program built for building owners who lease commercial space. Covers tenant-caused bodily injury and property damage, including fire damage from a tenant's operations, so a single tenant loss doesn't land on the owner.",
+    whatsCovered: [
+      "Tenant-caused bodily injury on the premises",
+      "Property damage from a tenant's operations — including fire",
+      "The building itself (structure, roof, fixed systems)",
+      "Premises liability for common areas you control",
+      "Defense costs and legal fees when you're named in a lawsuit",
+      "Additional-insured status for lenders and partners",
+    ],
+    whoItsFor: [
+      "Building owners who lease commercial space to tenants",
+      "Owners leasing to contractors, trades, and manufacturers",
+      "Multi-tenant warehouse, flex, retail, and mixed-use owners",
+      "Owners whose lender requires lessor's-risk coverage",
+      "Any commercial landlord whose tenants' operations add risk",
+    ],
+    whyCca: [
+      "True LRO written at the LH-1 class code — not a generic landlord policy",
+      "Tenant-caused fire and damage covered the way it should be",
+      "Programs for high-hazard tenant mixes (contractors, food service)",
+    ],
+    faqs: [
+      {
+        q: "What exactly is Lessor's Risk Only insurance?",
+        a: "Lessor's Risk Only (LRO) is a specialized property-and-liability program for building owners whose only role is leasing commercial space to tenants. It covers the building and protects the owner when a tenant's operations cause a loss — most importantly a tenant-caused fire or a bodily-injury claim on the premises. LRO is written at the LH-1 class code.",
+      },
+      {
+        q: "What does LH-1 mean on my policy?",
+        a: "LH-1 is the ISO protection class for a Lessor's Risk Only building — a commercial property leased to tenants where the owner does not operate a business on the premises. Pricing and eligibility under LH-1 reflect the landlord-only occupancy, which is why a properly coded LRO policy costs differently from an owner-occupied commercial property.",
+      },
+      {
+        q: "Does LRO cover a fire a tenant starts?",
+        a: "Yes. That is the central reason LRO exists. If a tenant's welding, cooking, electrical, or manufacturing operation starts a fire that damages your building or another tenant's space, LRO covers your resulting property loss and liability. Generic policies frequently mishandle this exact scenario.",
+      },
+      {
+        q: "If my tenant carries insurance, do I still need lessor's risk?",
+        a: "Yes. Your tenant's policy covers the tenant, not your building. If the tenant is uninsured, underinsured, or disappears after a loss, the building owner is left with the damage. LRO protects you regardless of what the tenant carries — and you should still require tenants to name you additional insured.",
+      },
+      {
+        q: "Does lessor's risk cover injuries to a tenant's customer?",
+        a: "Injuries in common areas you control (parking lots, hallways, entrances) are covered under the premises-liability portion of your program. Injuries inside a tenant's space from the tenant's own operations should be covered by the tenant's general liability. We structure the program so neither side has a gap.",
+      },
+      {
+        q: "What tenant types raise the cost the most?",
+        a: "Higher-hazard tenants — contractors with hot work, restaurants with cooking, manufacturers, auto-repair, and welders — increase fire and liability exposure and can push the building into specialty markets. We know which markets write which tenant mixes and price the program correctly.",
+      },
+      {
+        q: "How is lessor's risk different from a landlord policy for residential rentals?",
+        a: "Residential landlord policies cover 1–4 family residential rentals. Commercial lessor's-risk (LRO / LH-1) is built for commercial space leased to businesses, with the fire, liability, and tenant-operation exposures that commercial tenants create. The two are not interchangeable.",
+      },
+      {
+        q: "Can you write LRO if my building is leased to contractors?",
+        a: "Absolutely — that's a core specialty. Buildings leased to framing, roofing, plumbing, electrical, and HVAC contractors carry elevated fire and liability exposure, and we have markets that write exactly this tenant mix and price it correctly at LH-1.",
+      },
+    ],
+  },
+  "commercial-property": {
+    heroBlurb:
+      "All-risk coverage for the building itself — structure, roof, mechanical systems, and tenant improvements — written for the construction type, occupancy, and protection class of a commercial property leased to multiple tenants.",
+    whatsCovered: [
+      "The building structure — walls, roof, foundation, frame",
+      "Fixed mechanical systems — plumbing, electrical, HVAC shells",
+      "Tenant improvements and betterments you own",
+      "Fire, wind, hail, theft, vandalism, and covered water damage",
+      "Debris removal and ordinance-or-law upgrades after a loss",
+      "Business-interruption / loss of rental income (optional)",
+    ],
+    whoItsFor: [
+      "Owners of the physical commercial building",
+      "Landlords carrying the property as the insured asset",
+      "Owners whose lender requires replacement-cost coverage",
+      "Buildings with significant tenant-improvement investment",
+    ],
+    whyCca: [
+      "Replacement-cost limits set to the building's true rebuild cost",
+      "Construction type and protection class priced correctly",
+      "Loss-of-rent income coverage sized to your real lease income",
+    ],
+    faqs: [
+      {
+        q: "What does commercial property cover for a building owner?",
+        a: "It covers the physical building — structure, roof, fixed systems, and the tenant improvements you own — against fire, wind, hail, theft, vandalism, and certain water damage. It protects the value of the building you lease out. It does not cover internal mechanical breakdown (that's equipment breakdown) or liability (that's LRO/GL).",
+      },
+      {
+        q: "Replacement cost or actual cash value for my building?",
+        a: "We strongly recommend replacement cost so a loss rebuilds your building new, not depreciated. Underinsuring on an actual-cash-value basis can leave you tens or hundreds of thousands short after a major fire — and many lenders require replacement cost anyway.",
+      },
+      {
+        q: "Does commercial property cover loss of rental income?",
+        a: "It can and should. Business-interruption / loss-of-rents coverage pays the rental income you lose while the building is being repaired after a covered loss. We size the restoration period to your real rebuild timeline so your cash flow survives a major loss.",
+      },
+      {
+        q: "What is ordinance or law coverage and do I need it?",
+        a: "After a partial loss, current building codes often force you to rebuild to a higher standard than the original structure — triggering costs a basic policy won't pay. Ordinance-or-law coverage pays those code-upgrade costs. For older commercial buildings it's essential.",
+      },
+      {
+        q: "Does commercial property cover a roof leak or old roof?",
+        a: "Sudden damage from a covered peril (wind, hail) is covered; wear-and-tear and maintenance issues generally are not. We help you document roof condition and age and place carriers that handle roof claims fairly, especially on older commercial roofs.",
+      },
+      {
+        q: "How is the property limit determined?",
+        a: "The limit should equal the full replacement cost of the building — what it would cost to rebuild, not the market value or tax value. We help you calculate replacement cost correctly so the building is fully insured without overpaying on premium.",
+      },
+      {
+        q: "Does property cover tenant-caused damage?",
+        a: "Damage from a covered peril — including a tenant-caused fire — is covered under commercial property, and the tenant-caused-loss angle is reinforced by your LRO program. We coordinate the two so the building is protected regardless of cause.",
+      },
+      {
+        q: "How is commercial property rated for a leased building?",
+        a: "Premium reflects construction type (frame vs. masonry), protection class (fire protection), occupancy / tenant mix, building age and condition, and replacement cost. Good housekeeping, alarms, and documented protection improve both terms and price.",
+      },
+    ],
+  },
   "general-liability": {
     heroBlurb:
-      "Third-party bodily injury and property damage protection for your framing crews, jobsites, and subcontracted work — including products-completed operations and the additional-insured certificates that get you onto the project.",
+      "Premises liability protection for the building owner — slips and falls in common areas, parking-lot injuries, and third-party claims arising from the property you own and lease out to commercial tenants.",
     whatsCovered: [
-      "Bodily injury to visitors, other trades, and the public on your jobsite",
-      "Property damage caused by your framing operations or subcontracted work",
-      "Products-completed operations for framing you've finished",
+      "Bodily injury to visitors, tenants' customers, and the public",
+      "Slips, trips, and falls in common areas and parking lots",
+      "Property damage to third parties caused by the premises",
       "Defense costs and legal fees when you're named in a lawsuit",
-      "Additional-insured status for the GCs and developers you frame for",
-      "Fire damage to property you're working on (with proper limits)",
+      "Medical payments to minor injured parties",
+      "Additional-insured status for lenders and partners",
     ],
     whoItsFor: [
-      "Residential framing contractors and rough carpentry crews",
-      "Commercial and multifamily framing subcontractors",
-      "Crews that frame over two stories or set roof trusses",
-      "Framers who subcontract portions of their work",
-      "Any framer whose GC requires additional-insured certificates",
+      "Commercial building owners and landlords",
+      "Owners responsible for common areas and parking",
+      "Property owners whose tenants' customers visit the premises",
+      "Any owner who could be named in a premises-injury lawsuit",
     ],
     whyCca: [
-      "GL placed WITHOUT the height exclusions that haunt budget policies",
-      "Additional-insured and waiver-of-subrogation endorsements issued fast",
-      "Limits scaled to what your commercial contracts actually require",
+      "Premises liability that addresses the common-area exposure",
+      "Additional-insured endorsements issued fast for lenders",
+      "Limits scaled to your building value and tenant traffic",
     ],
     faqs: [
       {
-        q: "What does general liability cover for a framing contractor?",
-        a: "GL covers third-party bodily injury and property damage caused by your framing operations — a visitor hurt on your jobsite, damage you cause to adjacent property, or a completed-operations claim after the frame is up. It does not cover your own injuries (that's workers' comp) or your own tools (that's a tools floater).",
+        q: "What does general liability cover for a commercial landlord?",
+        a: "GL covers third-party bodily injury and property damage arising from the premises you own and lease out — a tenant's customer slipping in your parking lot, a visitor falling in a stairwell, or damage to a neighbor's property. It does not cover the building itself (property) or your employees (workers' comp).",
       },
       {
-        q: "Does framing GL cover work above two stories?",
-        a: "It should. Many low-cost contractor policies exclude work over one or two stories or exclude roof work entirely. Because framing is a height trade, we place GL that specifically covers two- and three-story framing, truss setting, and roof work.",
+        q: "Is general liability included in lessor's risk?",
+        a: "Often yes — a full Lessor's Risk Only program bundles premises liability with the property coverage. Standalone GL is also available. Either way, we make sure the common-area and third-party exposure is addressed, not just the tenant suites.",
       },
       {
-        q: "What's the difference between GL and workers' comp for framers?",
-        a: "GL covers third parties (other people and their property). Workers' comp covers your own employees if they're hurt on the job. You need both — GCs require GL certificates, and state law requires workers' comp for your W-2 crew.",
+        q: "Does GL cover a slip and fall in the parking lot?",
+        a: "Yes. Parking lots, entrances, hallways, stairwells, and other common areas you control are exactly where premises-liability claims arise. We place GL that covers these areas specifically, including snow/ice and trip-hazard exposures.",
       },
       {
-        q: "Why do GCs require me to add them as additional insured?",
-        a: "Additional-insured status extends your GL to the GC for your operations, so if a claim arises from your framing work your policy responds first. It's a standard contract requirement, along with a waiver of subrogation and primary/non-contributory language. We issue these routinely.",
+        q: "What if a tenant's customer is injured inside the tenant's space?",
+        a: "Injuries from the tenant's own operations should be covered by the tenant's general liability — which is one reason your lease must require the tenant to carry GL and name you additional insured. We help you set up those lease requirements and certificate tracking.",
       },
       {
-        q: "Does GL cover fire damage to the building I'm framing?",
-        a: "Partially. GL typically includes limited coverage for fire damage to property in your care (often a $50,000 or $100,000 sublimit), but the structure itself should be covered under builder's risk. We coordinate both so the frame is protected during construction.",
+        q: "What GL limits does a commercial landlord need?",
+        a: "Most carry $1M per occurrence / $2M general aggregate, with a $2M–$5M umbrella when building value or tenant traffic warrants. Lenders often require minimum limits. We size limits to your building, tenants, and lease requirements.",
       },
       {
-        q: "Are framing subcontractors covered under my GL?",
-        a: "No. Independent subcontractors need their own GL and should name you additional insured. If an uninsured sub causes a loss, you can be pulled in. We help set up certificate tracking so subcontracted work doesn't become your liability.",
+        q: "Should my tenant name me additional insured?",
+        a: "Yes — strongly. Your lease should require every tenant to carry GL and name the building owner additional insured on a primary, non-contributory basis. That way if a claim arises inside the tenant's operations, their policy responds first. We provide a sample lease clause.",
       },
       {
-        q: "What GL limits do framing contractors need?",
-        a: "Most residential framers carry $1M per occurrence / $2M general aggregate. Commercial and multifamily GCs often require $2M or $5M limits — we add an umbrella to reach them when needed.",
+        q: "Does GL cover a tenant-caused fire?",
+        a: "GL typically includes limited coverage for fire damage to premises you rent to others, but the building itself should be covered under commercial property / LRO. We coordinate all three so a tenant-caused fire is fully handled regardless of which policy responds first.",
       },
       {
-        q: "How is framing GL premium calculated?",
-        a: "GL for contractors is usually rated on payroll and subcontractor cost, sometimes on revenue. Accurate classification and documented loss control keep the premium fair. We document your real operation so you're not rated on a worst-case guess.",
+        q: "How is landlord GL premium calculated?",
+        a: "GL for commercial landlords is usually rated on square footage leased, building type, and exposure (common-area size, tenant traffic). Documented maintenance, lighting, and security programs improve both terms and price.",
       },
     ],
   },
-  "workers-compensation": {
+  "property-management-eando": {
     heroBlurb:
-      "Coverage for the injury patterns unique to framing crews — falls from height, nail-gun and saw lacerations, struck-by and material-handling injuries — with correct class 5403 coding so you're not overpaying or underinsured.",
+      "Errors & omissions coverage for property owners and managers — claims from leasing mistakes, maintenance oversights, tenant disputes, and the day-to-day decisions that can turn into a negligence lawsuit.",
     whatsCovered: [
-      "Medical treatment for on-the-job framing injuries",
-      "Disability and lost-wage benefits for injured crew members",
-      "Fall-from-height and scaffold injuries",
-      "Nail-gun, saw, and laceration claims",
-      "Struck-by and material-handling injuries",
-      "Employers' liability (Part Two) protection",
+      "Claims of negligent maintenance or repairs",
+      "Leasing and tenant-screening errors",
+      "Fair-housing and discrimination allegations",
+      "Mishandled security deposits and tenant funds",
+      "Failure to maintain required insurance or code compliance",
+      "Defense costs and legal fees for management claims",
     ],
     whoItsFor: [
-      "Framing contractors with W-2 employees",
-      "Crews working at height on trusses, walls, and roofs",
-      "Sole proprietors who elect to cover themselves",
-      "Any framer required by state law to carry workers' comp",
+      "Owners who self-manage their commercial properties",
+      "Property management companies and on-site managers",
+      "Owners with employees who lease or maintain the building",
+      "Anyone whose management decisions could be alleged as negligent",
     ],
     whyCca: [
-      "Correct NCCI class 5403 coding — not generic construction codes",
-      "Fall-protection documentation that supports better rates",
-      "Aggressive claims management to protect your experience modifier",
+      "Covers the management-decision exposures GL doesn't",
+      "Defense costs included — these lawsuits are expensive to defend",
+      "Programs for both self-managed owners and management firms",
     ],
     faqs: [
       {
-        q: "What is the workers' comp class code for framing?",
-        a: "Wood framing and rough carpentry is most often coded under NCCI class 5403 (Carpentry). Some operations split out roof truss setting, siding, or interior finish work into separate codes. Correct coding keeps your premium fair and prevents audit surprises.",
+        q: "What is property management E&O insurance?",
+        a: "Property management errors & omissions (E&O) covers claims that your management of the property was negligent — a missed repair that caused damage, a leasing mistake, a fair-housing allegation, or mishandled tenant funds. It addresses the professional-decision exposures that general liability doesn't cover.",
       },
       {
-        q: "How much is workers' comp for a framing contractor?",
-        a: "Workers' comp is rated on payroll by class code. Framing (5403) carries a higher rate than office work because of the fall and tool exposure, but good loss control and a clean experience modifier meaningfully reduce it. We quote based on your actual payroll and history.",
+        q: "Do I need E&O if I self-manage my own building?",
+        a: "If you make the management, leasing, and maintenance decisions yourself, your decisions can still be alleged as negligent — and a lawsuit is expensive to defend even if you win. Self-managing owners often carry E&O for that defense coverage. We'll help you decide based on your operation.",
       },
       {
-        q: "Do owner-operators need to carry workers' comp on themselves?",
-        a: "It depends on your state and business structure. Many states exempt sole proprietors and single-member LLC owners, but you can elect coverage, and if you have any W-2 employees you must carry it. We'll tell you exactly what your state requires.",
+        q: "How is E&O different from general liability?",
+        a: "General liability covers bodily injury and property damage to third parties. E&O covers financial loss from a negligent professional act or omission in managing the property — the kinds of claims that don't involve a physical injury but still cost you money. Many landlords need both.",
       },
       {
-        q: "Will one claim make my rates unaffordable?",
-        a: "A serious claim affects your experience modifier, but the impact is bounded and improves over time. The best defense is correct class coding, a documented fall-protection program, and aggressive claim management — all of which we provide to keep your mod down.",
+        q: "Does E&O cover fair-housing or discrimination claims?",
+        a: "Many property management E&O policies include coverage for alleged fair-housing violations or discrimination in leasing, including defense costs. These claims are increasingly common and expensive, so we make sure the policy form addresses them.",
       },
       {
-        q: "How do you handle fall-from-height claims?",
-        a: "Falls are the most common serious framing injury. We respond within 2 hours, make sure the injured framer gets care fast, and manage the claim with the carrier to control cost and get the crew member back to work. Good handling protects both the worker and your modifier.",
+        q: "What if a third party manages my building?",
+        a: "If a property management company runs the building, they should carry their own E&O and name you additional insured. We help you verify their coverage and decide whether you also want your own management-liability protection as the owner.",
       },
       {
-        q: "What if my crew works in multiple states?",
-        a: "Workers' comp follows where the work is performed, and each state has its own rules and rates. Because we're licensed in all 50 states, we structure a program that covers your crews across state lines without gaps.",
+        q: "Does E&O cover a tenant injury claim?",
+        a: "No — tenant and visitor injuries are a general liability / premises liability matter. E&O covers the financial-loss claims from how the property is managed, not physical injuries. The two coverages complement each other.",
       },
       {
-        q: "Are 1099 subcontractors covered under my workers' comp?",
-        a: "Generally no — true independent contractors carry their own. But many states apply a 'statutory employee' test, and misclassifying W-2 workers as 1099 can leave you liable. We help you classify workers correctly and document it.",
+        q: "How much E&O coverage do I need?",
+        a: "Common limits are $1M per claim / $2M aggregate for property management E&O. The right limit depends on the size of the portfolio, number of tenants, and the management operation's complexity. We size coverage to your real exposure.",
       },
       {
-        q: "How do audits work for framing workers' comp?",
-        a: "At policy end, the carrier audits your actual payroll by class code and true-ups the premium. If your payroll was underreported you'll owe more; if overreported, you'll get a return. We help you classify payroll correctly up front to avoid audit shock.",
+        q: "How is property management E&O rated?",
+        a: "Premium reflects the number of units or square footage managed, the types of properties, revenue from management activities, and claims history. We document your operation accurately so the premium reflects real exposure.",
       },
     ],
   },
-  "commercial-auto": {
+  "boiler-machinery": {
     heroBlurb:
-      "Coverage for the pickup trucks, dump trailers, and lumber haulers that move your crew and materials between jobsites — including hired/non-owned vehicles and loading liability.",
+      "Equipment breakdown coverage for the systems that keep a commercial building running — boilers, chillers, elevators, electrical panels, and rooftop HVAC — where a mechanical or electrical failure can cost tens of thousands and shut down tenant operations.",
     whatsCovered: [
-      "Liability for at-fault accidents in work trucks and trailers",
-      "Physical damage (comprehensive & collision) to owned vehicles",
-      "Lumber and material-hauling trailers",
-      "Hired and non-owned auto for employees driving their own trucks",
-      "Uninsured and underinsured motorist coverage",
-      "Loading and unloading liability",
+      "Boiler, chiller, and pressure-vessel breakdown",
+      "Rooftop HVAC and cooling-tower failures",
+      "Elevator motors, drives, and control panels",
+      "Main electrical panels and transformers",
+      "Repair cost plus resulting property damage",
+      "Business interruption / loss of rents from the downtime",
     ],
     whoItsFor: [
-      "Framers with owned pickup trucks, dump trailers, or haulers",
-      "Crews that transport lumber, trusses, and materials",
-      "Operations whose employees drive personal trucks for work",
-      "Any framer whose personal auto policy would deny a work claim",
+      "Owners of any commercial building with mechanical systems",
+      "Buildings with elevators, central HVAC, or boilers",
+      "Owners whose tenants depend on climate control or power",
+      "Landlords wanting to close the standard property exclusion",
     ],
     whyCca: [
-      "Business-use rating that won't deny your jobsite driving",
-      "Trailer and lumber-hauling exposure factored in",
-      "Fleet and single-vehicle programs available",
+      "Closes the internal-breakdown gap in standard property",
+      "Includes business-interruption from equipment downtime",
+      "Priced for commercial systems, not residential equipment",
     ],
     faqs: [
       {
-        q: "Why can't I use my personal auto policy for my work truck?",
-        a: "Personal auto policies typically exclude business use and will deny a claim when you're hauling lumber, tools, or a crew to a jobsite. Commercial auto is rated for business use and covers the real way framers drive.",
+        q: "What does equipment breakdown cover for a commercial building?",
+        a: "Equipment breakdown (formerly boiler & machinery) covers sudden, accidental mechanical or electrical breakdown of covered equipment — boilers, chillers, rooftop HVAC, elevators, electrical panels, and pressure vessels. Standard commercial property excludes internal breakdown, so this coverage fills a major gap.",
       },
       {
-        q: "What is hired and non-owned auto, and do framers need it?",
-        a: "Hired auto covers rental vehicles; non-owned auto covers employees driving their own personal vehicles for your business. If any crew member runs materials in their own truck, you want non-owned coverage — it protects your business when their personal policy falls short.",
+        q: "Why doesn't regular property cover HVAC breakdown?",
+        a: "Commercial property covers external causes of damage (fire, wind, theft) but excludes internal mechanical and electrical breakdown — worn bearings, shorted windings, arcing, compressor failure. Equipment breakdown is the coverage that pays when the system simply fails.",
       },
       {
-        q: "Are the lumber and tools in my truck covered by auto?",
-        a: "Liability for an at-fault crash is covered, but the cargo (lumber, tools) generally is not. Lumber in transit is an installation floater / inland marine matter, and tools are a tools & equipment matter. We coordinate all three.",
+        q: "Does equipment breakdown cover elevators?",
+        a: "Yes. Elevator motors, drives, controllers, and the mechanical systems that fail from wear or electrical surge are covered equipment. An elevator outage is one of the most disruptive losses a multi-tenant building can suffer, and this coverage pays to repair it fast.",
       },
       {
-        q: "Do I need commercial auto for a dump trailer?",
-        a: "Yes. Trailers need their own physical damage coverage and the truck towing them needs adequate liability. We schedule trailers and make sure the combined rig is properly insured.",
+        q: "Does it cover business interruption from the breakdown?",
+        a: "Yes — and that's often the larger loss. When a chiller or boiler fails and tenants can't operate, the resulting loss of rental income and extra expense is covered. We size the restoration period to how long a major system actually takes to replace.",
       },
       {
-        q: "How is commercial auto rated for framing contractors?",
-        a: "Premium is based on the vehicles (type, value, use), drivers (records and experience), and radius of operation. Clean driving records and accurate vehicle scheduling keep the cost down.",
+        q: "How is equipment breakdown different from a warranty?",
+        a: "A manufacturer warranty covers specific equipment for a limited time and often excludes the resulting damage and downtime. Equipment breakdown covers the repair, the resulting property damage, and the business-interruption loss — and it applies across all covered systems, not just one.",
       },
       {
-        q: "What if an employee gets in an accident in a company truck?",
-        a: "Commercial auto covers at-fault liability and physical damage for company vehicles. We respond fast, coordinate the claim, and get the truck repaired or replaced so the crew keeps moving.",
+        q: "How much does equipment breakdown cost?",
+        a: "It's typically one of the most cost-effective coverages in a commercial property program — a small percentage of the property premium, given the frequency and severity of mechanical failures in commercial buildings. We include it as standard in most programs.",
       },
       {
-        q: "Do you insure framing fleets or just single trucks?",
-        a: "Both. Whether you run a single work truck or a fleet of haulers and trailers, we structure a commercial auto program that covers every vehicle and driver.",
+        q: "Does it cover old equipment?",
+        a: "Coverage applies to sudden accidental breakdown regardless of age, though wear-and-tear alone isn't a covered cause. If an aging compressor short-circuits and fails, that's covered; if it simply wears out gradually, that's maintenance. We help you distinguish and document.",
       },
       {
-        q: "Does commercial auto cover loading and unloading lumber?",
-        a: "Many policies include some loading/unloading liability, but the cargo itself is an inland marine matter. We make sure the liability gap is closed and pair the auto policy with a tools and materials floater.",
-      },
-    ],
-  },
-  "builders-risk": {
-    heroBlurb:
-      "Course-of-construction coverage for the building you're framing — lumber packages, installed materials, and labor — against fire, wind, theft, and vandalism while the project is open to loss.",
-    whatsCovered: [
-      "Lumber packages and framing materials on site",
-      "Installed framing, sheathing, and labor in place",
-      "Fire, wind, theft, and vandalism during construction",
-      "Soft costs and delayed opening (optional)",
-      "Materials in transit and at staging areas",
-      "Scaffolding, temporary structures, and forms",
-    ],
-    whoItsFor: [
-      "Framers responsible for the materials they install",
-      "Contractors whose GC's master policy leaves gaps",
-      "Owners and builders on custom or spec homes",
-      "Crews framing in wildfire, wind, or high-theft areas",
-    ],
-    whyCca: [
-      "Closes the gap between delivered materials and installed work",
-      "Written for the project's real value and construction timeline",
-      "Covers the exposures GC master policies often miss",
-    ],
-    faqs: [
-      {
-        q: "What does builder's risk cover for a framing project?",
-        a: "Builder's risk (course of construction) covers the structure and materials during construction — fire, wind, theft, vandalism, and some weather damage to the lumber package and installed framing. It protects the value of what you're building while it's most exposed.",
-      },
-      {
-        q: "If the GC carries builder's risk, do I need my own?",
-        a: "Not always, but gaps are common. The GC's master policy may not cover materials you've delivered but not yet installed, or may carry a large deductible that falls on you. We review the GC's program and add an installation floater if there's a gap.",
-      },
-      {
-        q: "Does builder's risk cover lumber stolen from the jobsite?",
-        a: "Yes — theft of materials from the site is a covered cause of loss under most builder's risk forms, subject to the policy terms and deductible. Given how common lumber theft is, this is one of the most valuable parts of the coverage.",
-      },
-      {
-        q: "Who buys builder's risk — the framer, the GC, or the owner?",
-        a: "It varies by contract. Often the owner or GC carries a master policy. When you're responsible for materials and labor you've put in place, an installation floater or your own builder's risk makes sure you're protected regardless of what the GC carries.",
-      },
-      {
-        q: "Does builder's risk cover wind and weather?",
-        a: "Most forms cover wind and weather damage to the structure under construction, though named-storm and hurricane coverage may carry separate deductibles in coastal zones. We structure the policy for your region's weather exposure.",
-      },
-      {
-        q: "What are soft costs in builder's risk?",
-        a: "Soft costs are the additional expenses from a construction delay — extra interest, real estate taxes, rent, and re-engineering. Soft-cost coverage is optional but valuable on larger projects where a fire or storm could push back completion.",
-      },
-      {
-        q: "How is the builder's risk limit determined?",
-        a: "The limit should equal the completed value of the project (materials, labor, and profit) at the time of loss. We help you set the limit correctly so the structure is fully insured throughout the build.",
-      },
-      {
-        q: "Does builder's risk cover fire damage during framing?",
-        a: "Yes. Fire is a covered peril, and a framed structure full of combustible lumber is exactly when the exposure peaks. Builder's risk covers fire damage to the structure and materials during construction.",
-      },
-    ],
-  },
-  "inland-marine-equipment": {
-    heroBlurb:
-      "Scheduled tools-and-equipment coverage for the pneumatic nailers, miter saws, generators, and compressors that walk off jobsites — plus installation floaters that cover materials in transit to the frame.",
-    whatsCovered: [
-      "Pneumatic nail guns, miter saws, and circular saws",
-      "Generators, air compressors, and lasers",
-      "Theft from jobsites, trucks, and trailers",
-      "Materials in transit to the jobsite (installation floater)",
-      "Mobile equipment and small tools",
-      "Replacement cost on scheduled gear",
-    ],
-    whoItsFor: [
-      "Framers with significant investment in power tools",
-      "Crews whose gear lives on trucks and jobsites",
-      "Contractors responsible for materials in transit",
-      "Any framer who's had tools stolen",
-    ],
-    whyCca: [
-      "Tools scheduled at replacement cost — not depreciated",
-      "Theft coverage that follows your gear wherever it goes",
-      "Installation floaters that close the transit gap",
-    ],
-    faqs: [
-      {
-        q: "Does general liability cover my stolen nail guns and saws?",
-        a: "No. GL and commercial property do not cover tools off-premises. Tools are an inland marine (tools & equipment) coverage. We schedule your nail guns, saws, generators, and compressors so theft is covered.",
-      },
-      {
-        q: "How is a tools floater different from commercial property?",
-        a: "Commercial property covers gear at a fixed location like your shop. A tools & equipment (inland marine) floater follows your tools wherever they go — jobsite, truck, trailer — which is where framing tools actually live and get stolen.",
-      },
-      {
-        q: "Is tools coverage replacement cost or actual cash value?",
-        a: "We write tools & equipment at replacement cost so a stolen nailer or saw is replaced new, not depreciated to pennies. That's the difference between staying on schedule and buying gear out of pocket.",
-      },
-      {
-        q: "What is an installation floater and why do framers need it?",
-        a: "An installation floater covers materials (lumber, trusses, hardware) while in transit to the jobsite and until they're installed and covered by builder's risk. It closes the gap between the supplier's truck and the structure.",
-      },
-      {
-        q: "How do I value my tools for a floater?",
-        a: "We build a schedule listing each major tool and its replacement value. You can update the schedule as you add gear. Accurate scheduling keeps premiums fair and claims fast.",
-      },
-      {
-        q: "Are tools stolen from my truck covered?",
-        a: "Yes — a tools & equipment floater covers theft from your truck, trailer, and jobsite, subject to the policy terms and deductible. Given how often tools are stolen from vehicles, this is essential for framers.",
-      },
-      {
-        q: "Does the floater cover borrowed or rented tools?",
-        a: "It can. We can extend coverage to borrowed and rented equipment, which matters if you rent lifts, compressors, or specialty tools for a job. Tell us what you use and we'll structure it.",
-      },
-      {
-        q: "How fast are tools claims paid?",
-        a: "Once you provide a police report (for theft) and the schedule, tools claims are typically paid quickly so you can replace gear and get back to work. We help you document to keep it moving.",
-      },
-    ],
-  },
-  "property": {
-    heroBlurb:
-      "All-risk commercial property coverage for the framer's shop, storage yard, wall-panel facility, and lumber/inventory — built for the combustible loading and hot-work exposures of a wood operation.",
-    whatsCovered: [
-      "Shop, office, and storage buildings",
-      "Wall-panel and truss fabrication facilities",
-      "Lumber and material inventory",
-      "Office equipment and records",
-      "Equipment breakdown for shop machinery",
-      "Business interruption during restoration",
-    ],
-    whoItsFor: [
-      "Framers with a shop, yard, or prefab facility",
-      "Contractors carrying lumber and material inventory",
-      "Operations with wall-panel or truss production",
-      "Any framer whose business depends on a fixed location",
-    ],
-    whyCca: [
-      "Combustible-loading and hot-work exposure priced correctly",
-      "Equipment and inventory at replacement cost",
-      "Business interruption with adequate restoration period",
-    ],
-    faqs: [
-      {
-        q: "What does commercial property cover for a framing business?",
-        a: "It covers your shop, yard, prefab facility, lumber and material inventory, and office equipment against fire, theft, wind, and other covered perils — the fixed-location assets your business depends on.",
-      },
-      {
-        q: "Does commercial property cover my lumber inventory?",
-        a: "Yes. Lumber and material inventory stored at your yard or shop can be scheduled and covered at your location. Materials on the jobsite are a builder's risk / installation floater matter — we coordinate both.",
-      },
-      {
-        q: "Will a property policy cover a wall-panel plant?",
-        a: "Yes, and we tailor it — wall-panel and truss fabrication add manufacturing property and equipment-breakdown exposures. We schedule the production equipment and include business interruption for the restoration period.",
-      },
-      {
-        q: "Why does combustible loading matter for my shop?",
-        a: "A shop full of lumber and sawdust is a higher fire exposure than a typical office, and that affects underwriting and pricing. We document your housekeeping and fire-protection program to get the best terms.",
-      },
-      {
-        q: "Is equipment breakdown included?",
-        a: "It can be. Equipment breakdown covers internal mechanical and electrical failures of shop machinery — saws, compressors, panel equipment — that standard property excludes. We include it for operations with significant machinery.",
-      },
-      {
-        q: "Does property cover business interruption if my shop burns?",
-        a: "Business interruption coverage pays your lost income and ongoing expenses during restoration. For a framing business, that can mean the difference between surviving a fire and closing. We size the restoration period to your real recovery time.",
-      },
-      {
-        q: "Replacement cost or actual cash value for my property?",
-        a: "We recommend replacement cost so a loss restores your shop and equipment new, not depreciated. For specialized or older equipment, ACV can leave you dramatically underinsured.",
-      },
-      {
-        q: "How is commercial property rated for framers?",
-        a: "Premium reflects construction type, protection (sprinklers, alarms), occupancy, lumber inventory value, and fire exposure. Good housekeeping and documented protection programs improve both terms and price.",
+        q: "Who needs equipment breakdown coverage?",
+        a: "Essentially every commercial building owner. If the building has a boiler, chiller, central HVAC, elevator, or main electrical service — and tenants who depend on climate control or power — you need it. The cost of a single major failure easily justifies the premium.",
       },
     ],
   },
   "umbrella-excess-liability": {
     heroBlurb:
-      "Layered limits above your GL, auto, and employers' liability — essential when a fall, a framed-structure fire, or a multi-party jobsite loss could otherwise exhaust your primary coverage.",
+      "Layered limits above your LRO, general liability, and auto — essential when a tenant-caused fire, a serious common-area injury, or a catastrophic structural loss could otherwise exhaust your primary coverage and reach your other assets.",
     whatsCovered: [
-      "Additional limits above GL, commercial auto, and employers' liability",
+      "Additional limits above LRO, GL, and commercial auto",
       "Limits from $2M up to $10M+ for catastrophic claims",
-      "Protection for multi-party jobsite losses",
+      "Protection for multi-tenant and high-traffic exposures",
       "Coverage that follows the underlying policy form",
       "Defense contributions on large complex claims",
     ],
     whoItsFor: [
-      "Framers whose GC contracts require higher limits",
-      "Crews on commercial and multifamily projects",
-      "Contractors with significant assets to protect",
-      "Any framer whose primary limits no longer match exposure",
+      "Owners of higher-value commercial buildings",
+      "Landlords with high-hazard tenant mixes",
+      "Property owners with significant assets to protect",
+      "Owners whose primary limits no longer match exposure",
     ],
     whyCca: [
-      "Limits layered cleanly above your underlying program",
-      "Up to $10M+ available for high-exposure operations",
-      "Priced for framing contractors, not generic small business",
+      "Limits layered cleanly above your LRO and GL program",
+      "Up to $10M+ available for high-exposure properties",
+      "One of the most cost-effective ways to protect your assets",
     ],
     faqs: [
       {
-        q: "What does an umbrella policy cover for a framing contractor?",
-        a: "An umbrella adds liability limits above your general liability, commercial auto, and employers' liability. If a serious fall, fire, or jobsite loss exhausts your primary policy, the umbrella pays the layers above — protecting your assets and your contracts.",
+        q: "What does an umbrella cover for a commercial landlord?",
+        a: "An umbrella adds liability limits above your Lessor's Risk, general liability, and commercial auto. If a tenant-caused fire, a serious injury, or a catastrophic loss exhausts your primary policy, the umbrella pays the layers above — protecting your building and your other assets.",
       },
       {
-        q: "How much umbrella coverage does a framer need?",
-        a: "It's driven by your largest realistic loss and your contract requirements. Many commercial and multifamily GCs require $2M–$5M total limits. We model your worst-case scenarios and size the umbrella to what your work actually demands.",
+        q: "How much umbrella coverage does a property owner need?",
+        a: "It's driven by your building value, tenant mix, and asset profile. Many owners carry $2M–$5M, with higher limits for high-hazard tenants (contractors, food service) or large portfolios. We model worst-case scenarios and size the umbrella to your real exposure.",
       },
       {
-        q: "Does the umbrella sit over workers' comp too?",
-        a: "It sits over employers' liability (Part Two of workers' comp), not the workers' comp benefit itself. That matters for serious injury claims that exceed primary employers' liability limits.",
+        q: "Does the umbrella sit over my lessor's-risk policy?",
+        a: "Yes — the umbrella sits above your LRO/GL and commercial auto, adding limits once those primary policies are exhausted. We make sure the underlying limits and the umbrella layer are coordinated so there are no gaps at the boundary.",
       },
       {
-        q: "Why would a GC require an umbrella?",
-        a: "Large projects and commercial contracts shift risk down to subcontractors and require proof of high limits — often $2M–$5M. Carrying an umbrella lets you bid that work and protects you from a catastrophic claim.",
+        q: "Why would a lender require an umbrella?",
+        a: "Commercial lenders want to protect the collateral and often require liability limits well above a primary policy's $1M or $2M. Carrying an umbrella satisfies that requirement and protects you from a catastrophic claim reaching your other assets.",
       },
       {
         q: "How is umbrella premium calculated?",
-        a: "Umbrella premium is a fraction of your underlying liability cost and reflects your operations, underlying limits, and the umbrella layer chosen. It's one of the most cost-effective ways to add protection.",
+        a: "Umbrella premium is a fraction of your underlying liability cost and reflects your operations, underlying limits, and the umbrella layer chosen. It's one of the most cost-effective ways to add significant protection — millions in limits for a modest premium.",
       },
       {
-        q: "Can I add umbrella limits mid-policy if a contract requires it?",
-        a: "Often yes. If a new project requires higher limits, we can frequently increase the umbrella (subject to underwriting) so you can take the work. Tell us the requirement and we'll move.",
+        q: "Can I add umbrella limits mid-policy if a lender requires it?",
+        a: "Often yes. If a refinance or new acquisition requires higher limits, we can frequently increase the umbrella (subject to underwriting) so the requirement is met. Tell us the requirement and we'll move.",
       },
       {
-        q: "Does the umbrella cover jobsite fires and product claims?",
-        a: "Yes. An umbrella responds to the same types of claims your underlying GL covers — including framed-structure fires and completed-operations claims — once primary limits are exhausted.",
+        q: "Does the umbrella cover tenant-caused fire claims?",
+        a: "Yes. An umbrella responds to the same types of claims your underlying LRO/GL covers — including a tenant-caused fire or a serious premises-injury claim — once primary limits are exhausted.",
       },
       {
         q: "What's the difference between umbrella and excess liability?",
@@ -690,60 +633,117 @@ export const SERVICE_DETAIL: Record<string, ServiceDetail> = {
       },
     ],
   },
-  "contractors-bonds": {
+  "commercial-auto": {
     heroBlurb:
-      "The bonds that keep you legal and competitive — state contractor license bonds, permit bonds, and bid/performance bonds for the GCs and developers who require them before you set the first plate.",
+      "Coverage for the trucks and vans your property-management and maintenance crews use to service the building — including hired/non-owned vehicles when employees drive their own cars between properties.",
     whatsCovered: [
-      "State contractor license bonds (CSLB, TREC, ROC, and more)",
-      "Permit and code-compliance bonds",
-      "Bid bonds for project pursuit",
-      "Performance and payment bonds",
-      "Supply bonds for material commitments",
-      "Court and miscellaneous bonds",
+      "Liability for at-fault accidents in company vehicles",
+      "Physical damage (comprehensive & collision) to owned vehicles",
+      "Maintenance trucks, vans, and service vehicles",
+      "Hired and non-owned auto for employees driving personal cars",
+      "Uninsured and underinsured motorist coverage",
+      "Loading and unloading of maintenance equipment",
     ],
     whoItsFor: [
-      "Framers required to hold a state contractor license bond",
-      "Contractors bidding bonded public or commercial work",
-      "Crews needing permit bonds to pull jobsite permits",
-      "Any framer whose GC requires a performance bond",
+      "Owners with company vehicles for property maintenance",
+      "Property management firms with service trucks or vans",
+      "Operations whose employees drive personal vehicles for work",
+      "Any owner whose personal auto policy would deny a work claim",
     ],
     whyCca: [
-      "License bonds written for your state's specific requirements",
-      "Bid and performance bond capacity for larger projects",
-      "Bonds coordinated with your insurance program under one roof",
+      "Business-use rating that won't deny property-work driving",
+      "Hired/non-owned coverage to protect against employee driving",
+      "Fleet and single-vehicle programs available",
     ],
     faqs: [
       {
-        q: "What's the difference between a bond and insurance?",
-        a: "Insurance protects you against loss. A surety bond is a three-party guarantee — the surety guarantees you'll fulfill an obligation (your license, a contract, a permit). If you don't, the surety pays the obligee and then seeks reimbursement from you.",
+        q: "Why can't I use a personal auto policy for property work?",
+        a: "Personal auto policies typically exclude business use and will deny a claim when you're driving between properties, hauling maintenance equipment, or running property errands. Commercial auto is rated for business use and covers the real way property owners drive.",
       },
       {
-        q: "Do framing contractors need a license bond?",
-        a: "In most states, yes — holding a contractor license requires a license bond (surety bond) that guarantees compliance with state contracting law. The amount and form vary by state. We write license bonds for every state we serve.",
+        q: "What is hired and non-owned auto and do landlords need it?",
+        a: "Hired auto covers rental vehicles; non-owned auto covers employees driving their own personal vehicles for your business. If any maintenance staff or manager runs property errands in their own car, you want non-owned coverage — it protects your business when their personal policy falls short.",
       },
       {
-        q: "What is a performance bond and when is it required?",
-        a: "A performance bond guarantees you'll complete a project per the contract. Public projects and many commercial GCs require performance and payment bonds, especially above certain contract values. We secure the bonding capacity to pursue that work.",
+        q: "Are tools and equipment in the truck covered by auto?",
+        a: "Liability for an at-fault crash is covered, but the cargo (tools, parts, equipment) generally is not. Tools are an inland marine / tools-and-equipment matter. We coordinate both so the vehicle and its contents are each properly insured.",
       },
       {
-        q: "How much does a contractor license bond cost?",
-        a: "License bond cost is a small percentage of the bond amount and depends on your credit, license history, and the state's required amount. Most run a few hundred dollars a year. We quote quickly.",
+        q: "Do I need commercial auto for a maintenance truck?",
+        a: "Yes. Any vehicle used to service the property — a maintenance truck, a groundskeeping trailer, a service van — needs commercial coverage. We schedule the vehicles and make sure each is properly rated for property-work use.",
       },
       {
-        q: "Can you help me get bonded for a bigger project?",
-        a: "Yes. We work with sureties to establish bonding capacity — single-job and program (aggregate) limits — so you can bid bonded work. We'll help you present your financials and track record to qualify.",
+        q: "How is commercial auto rated for property owners?",
+        a: "Premium is based on the vehicles (type, value, use), drivers (records and experience), and radius of operation. Clean driving records and accurate vehicle scheduling keep the cost down.",
       },
       {
-        q: "What's a bid bond?",
-        a: "A bid bond guarantees that if you win a bid, you'll enter the contract and provide a performance bond. It protects the project owner from bidders who back out. We issue bid bonds to support your pursuit of bonded projects.",
+        q: "What if an employee gets in an accident in a company truck?",
+        a: "Commercial auto covers at-fault liability and physical damage for company vehicles. We respond fast, coordinate the claim, and get the vehicle repaired or replaced so the maintenance operation keeps moving.",
       },
       {
-        q: "Do permit bonds cost a lot?",
-        a: "Permit and code-compliance bonds are typically inexpensive and required by local building departments to pull permits. We turn them around fast so your schedule isn't held up.",
+        q: "Do you insure property fleets or just single vehicles?",
+        a: "Both. Whether you run a single service truck or a fleet of maintenance vehicles across multiple properties, we structure a commercial auto program that covers every vehicle and driver.",
       },
       {
-        q: "Can I get my bonds and insurance from the same place?",
-        a: "Yes — and it's simpler. We write your license, performance, and permit bonds alongside your insurance program, with one point of contact for certificates, endorsements, and renewals.",
+        q: "Does commercial auto cover driving between multiple properties?",
+        a: "Yes — that's exactly the business-use exposure commercial auto is designed for. Personal auto routinely denies claims from driving between job sites or properties; commercial auto covers it as a matter of course.",
+      },
+    ],
+  },
+  "workers-compensation": {
+    heroBlurb:
+      "Workers' comp for the building employees and maintenance staff on your payroll — porters, groundskeepers, handymen, and on-site managers — coded to the correct class code so you're not overpaying or underinsured.",
+    whatsCovered: [
+      "Medical treatment for on-the-job injuries to building staff",
+      "Disability and lost-wage benefits for injured employees",
+      "Slip, fall, and lift injuries to maintenance workers",
+      "Chemical and equipment exposure claims",
+      "Employers' liability (Part Two) protection",
+      "Defense against employee injury lawsuits",
+    ],
+    whoItsFor: [
+      "Building owners with W-2 maintenance or management employees",
+      "Property owners with porters, handymen, or groundskeepers",
+      "Operations with on-site staff required by state law to carry it",
+      "Owners who want to be protected from employee-injury lawsuits",
+    ],
+    whyCca: [
+      "Correct class coding for janitorial, maintenance, and management staff",
+      "Documented safety programs that support better rates",
+      "Aggressive claims management to protect your experience modifier",
+    ],
+    faqs: [
+      {
+        q: "Do commercial property owners need workers' comp?",
+        a: "If you have any W-2 employees — a porter, a handyman, a groundskeeper, an on-site manager — most states require you to carry workers' comp. If you self-manage with no employees and use only independent contractors, the rules differ by state. We'll tell you exactly what your state requires.",
+      },
+      {
+        q: "What workers' comp class codes apply to building staff?",
+        a: "Janitorial, building maintenance, groundskeeping, and property-management staff each have specific NCCI class codes — different from construction or office codes. Correct coding keeps your premium fair and prevents audit surprises. We assign the right codes for each role.",
+      },
+      {
+        q: "Does workers' comp cover a contractor I hire to maintain the building?",
+        a: "Generally no — true independent contractors should carry their own workers' comp. If an uninsured contractor is hurt on your property and is found to be your employee under state law, you can be held liable. We help you classify workers correctly and document contractor status.",
+      },
+      {
+        q: "How much is workers' comp for building employees?",
+        a: "Workers' comp is rated on payroll by class code. Janitorial and maintenance codes are moderate; the rate reflects the injury exposure of the actual work. Good loss control and a clean experience modifier meaningfully reduce it. We quote based on your actual payroll and staff.",
+      },
+      {
+        q: "What if a maintenance worker is injured on the property?",
+        a: "We respond within 2 hours, make sure the employee gets care fast, and manage the claim with the carrier to control cost and get the employee back to work. Good handling protects both the worker and your experience modifier.",
+      },
+      {
+        q: "Will one claim make my rates unaffordable?",
+        a: "A serious claim affects your experience modifier, but the impact is bounded and improves over time. The best defense is correct class coding, documented safety training, and aggressive claim management — all of which we provide.",
+      },
+      {
+        q: "What if my maintenance staff works across multiple properties?",
+        a: "Workers' comp follows where the work is performed, and each state has its own rules and rates. Because we're licensed in all 50 states, we structure a program that covers your staff across property locations without gaps.",
+      },
+      {
+        q: "How do audits work for property owners' workers' comp?",
+        a: "At policy end, the carrier audits your actual payroll by class code and true-ups the premium. If payroll was underreported you'll owe more; if overreported, you'll get a return. We help you classify payroll correctly up front to avoid audit shock.",
       },
     ],
   },
@@ -753,14 +753,14 @@ export const SERVICE_DETAIL: Record<string, ServiceDetail> = {
    COVERAGE REGIONS — for coverage page
    ============================================================ */
 export const AZ_REGIONS = [
-  { name: "Texas & the Southwest", note: "TX, NM, AZ — the busiest framing markets in the country" },
-  { name: "U.S. Southeast", note: "FL, GA, NC, SC — hurricane-zone and high-volume residential framing" },
-  { name: "Rocky Mountain West", note: "CO, ID, UT — Front-Range and Intermountain residential construction" },
-  { name: "Pacific Northwest", note: "OR, WA — wet-climate, seismic-zone framing operations" },
-  { name: "Desert West", note: "AZ, NV — Phoenix and Las Vegas high-volume residential production" },
-  { name: "Great Lakes & Midwest", note: "MI, OH, IL, IN — suburban and rural residential markets" },
-  { name: "Northeast & Mid-Atlantic", note: "NY, NJ, PA, New England — dense residential and remodel work" },
-  { name: "California & West Coast", note: "CA — seismic-zone, WUI, and Title 24 framing environments" },
+  { name: "Texas & the Southwest", note: "TX, NM, AZ — fast-growing industrial, flex, and retail leasing markets" },
+  { name: "Southeast (Florida & Atlanta)", note: "FL, GA, Carolinas — warehouse, retail, multi-tenant with wind exposure" },
+  { name: "New York & the Northeast", note: "NY, NJ, PA, New England — dense multi-tenant and mixed-use urban stock" },
+  { name: "California & the West Coast", note: "CA — warehouse, flex, retail with seismic and wildfire-interface exposure" },
+  { name: "Chicago & the Midwest", note: "IL, MI, OH, IN — industrial, warehouse, and distribution tenant mix" },
+  { name: "Pacific Northwest", note: "OR, WA — warehouse, tech-flex, multi-tenant in Seattle and Portland" },
+  { name: "Rocky Mountain", note: "CO, UT, ID — fast-growing warehouse and light-industrial leasing" },
+  { name: "Mid-Atlantic (DC / VA / MD)", note: "DC, VA, MD, DE — mixed-use, office, and retail corridor properties" },
 ];
 
 /* ============================================================
@@ -778,17 +778,17 @@ export const US_STATES = [
 ];
 
 /* ============================================================
-   Quote form select options (framing-specific)
+   Quote form select options (lessor's-risk specific)
    ============================================================ */
 export const QUOTE_SERVICE_TYPES = [
-  "General Liability Insurance",
-  "Workers' Compensation",
-  "Commercial Auto Insurance",
-  "Builder's Risk Insurance",
-  "Tools & Equipment / Inland Marine",
+  "Lessor's Risk Only (LRO / LH-1)",
   "Commercial Property Insurance",
+  "General Liability (Premises)",
+  "Property Management E&O",
+  "Boiler & Machinery / Equipment Breakdown",
   "Umbrella / Excess Liability",
-  "Contractor License & Surety Bonds",
+  "Commercial Auto Insurance",
+  "Workers' Compensation",
   "Full program / bundle (recommended)",
   "Not sure — help me figure it out",
 ];
