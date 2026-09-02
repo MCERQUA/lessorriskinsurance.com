@@ -30,6 +30,13 @@ export default function QuotePage() {
     yearsInBusiness: "",
     message: "",
     "bot-field": "",
+    streetAddress: "",
+    fein: "",
+    equipmentYear: "",
+    equipmentMake: "",
+    equipmentModel: "",
+    equipmentSerialNumber: "",
+    equipmentValue: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -205,6 +212,16 @@ export default function QuotePage() {
                           <option value="">Select coverage…</option>
                           {QUOTE_SERVICE_TYPES.map((s) => (<option key={s} value={s}>{s}</option>))}
                         </select>
+                      </div>
+
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <div><label htmlFor="streetAddress" className={labelClass}>Street Address *</label><input id="streetAddress" name="streetAddress" type="text" required value={formData.streetAddress} onChange={handleChange} className={inputClass} /></div>
+                        <div><label htmlFor="fein" className={labelClass}>FEIN (Federal Tax ID) *</label><input id="fein" name="fein" type="text" required value={formData.fein} onChange={handleChange} className={inputClass} /></div>
+                        <div><label htmlFor="equipmentYear" className={labelClass}>Equipment Year *</label><input id="equipmentYear" name="equipmentYear" type="number" required value={formData.equipmentYear} onChange={handleChange} className={inputClass} /></div>
+                        <div><label htmlFor="equipmentMake" className={labelClass}>Equipment Make *</label><input id="equipmentMake" name="equipmentMake" type="text" required value={formData.equipmentMake} onChange={handleChange} className={inputClass} /></div>
+                        <div><label htmlFor="equipmentModel" className={labelClass}>Equipment Model *</label><input id="equipmentModel" name="equipmentModel" type="text" required value={formData.equipmentModel} onChange={handleChange} className={inputClass} /></div>
+                        <div><label htmlFor="equipmentSerialNumber" className={labelClass}>Equipment Serial Number *</label><input id="equipmentSerialNumber" name="equipmentSerialNumber" type="text" required value={formData.equipmentSerialNumber} onChange={handleChange} className={inputClass} /></div>
+                        <div><label htmlFor="equipmentValue" className={labelClass}>Equipment Value ($) *</label><input id="equipmentValue" name="equipmentValue" type="text" required value={formData.equipmentValue} onChange={handleChange} className={inputClass} /></div>
                       </div>
 
                       <div>
