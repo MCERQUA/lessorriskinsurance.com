@@ -35,11 +35,13 @@ export default function ContactPage() {
     setSubmitting(true);
     setError("");
     try {
-      await fetch(WEBHOOK_URL, {
+      const res = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ form_name: "contact", source: "lessorriskinsurance.com", ...formData }),
       });
+      // fetch() resolves on a 4xx/5xx, so the status is what says the lead was taken.
+      if (!res.ok) throw new Error(String(res.status));
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us at 844-967-5247.");
