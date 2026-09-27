@@ -5,11 +5,11 @@ heading to signal premium commercial real estate and to differentiate from the g
 sibling trades site.
 
 ## Palette (Tailwind token NAMES are shared across the component architecture; VALUES remapped here)
-- **Primary — deep navy** (`clay`): `#1B2A4E` (authoritative navy), dark `#121D38`, light `#2A3E6E`
-- **Secondary — wine / garnet** (`sage`): `#7A2E3A`, dark `#5E222C`, light `#9A4551`
+- **Primary — deep navy** (`clay`): `#412413` (authoritative navy), dark `#2D190D`, light `#60351C`
+- **Secondary — wine / garnet** (`sage`): `#6B3B1F`, dark `#522D18`, light `#904F2A`
 - **Accent — antique gold** (`gold`): `#C9A24B`
 - Backgrounds: `cream #FBF8F3`, `sand #F1ECE3`, white
-- Text: `espresso #121A2B` (headings), `cocoa #3A4358` (body), `mocha #6B7488` (muted)
+- Text: `espresso #221810` (headings), `cocoa #4F4034` (body), `mocha #86705D` (muted)
 - Border: `adobe #E0D9CC`
 
 ## Typography

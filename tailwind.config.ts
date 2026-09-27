@@ -22,33 +22,33 @@ const config: Config = {
         white: "#FFFFFF",          // cards
         // === Primary — Deep Navy (token name: clay) ===
         clay: {
-          DEFAULT: "#1B2A4E",      // primary — authoritative deep navy
-          dark: "#121D38",
-          light: "#2A3E6E",
-          50: "#EAEDF4",
-          100: "#CCD3E1",
-          200: "#9BA8C4",
-          300: "#6779A4",
-          400: "#3D5080",
-          500: "#2A3E6E",
-          600: "#1B2A4E",
-          700: "#121D38",
-          800: "#0C1426",
-          900: "#070C18",
+          DEFAULT: "#412413",      // primary — authoritative deep navy
+          dark: "#2D190D",
+          light: "#60351C",
+          50: "#F2ECE4",
+          100: "#DDD1C6",
+          200: "#BCA38E",
+          300: "#937358",
+          400: "#7A4323",
+          500: "#60351C",
+          600: "#412413",
+          700: "#2D190D",
+          800: "#1A130D",
+          900: "#0E0C09",
         },
         // === Secondary — Wine / Garnet (token name: sage) ===
         sage: {
-          DEFAULT: "#7A2E3A",      // secondary — refined wine / garnet
-          dark: "#5E222C",
-          light: "#9A4551",
+          DEFAULT: "#6B3B1F",      // secondary — refined wine / garnet
+          dark: "#522D18",
+          light: "#904F2A",
           50: "#F6EBED",
           100: "#EAD0D5",
-          200: "#D2A1AB",
-          300: "#B67280",
-          400: "#9A4551",
-          500: "#7A2E3A",
-          600: "#5E222C",
-          700: "#461921",
+          200: "#DAA180",
+          300: "#C66E3B",
+          400: "#904F2A",
+          500: "#6B3B1F",
+          600: "#522D18",
+          700: "#3C2111",
         },
         // === Accent — Antique Gold (token name: gold) ===
         gold: {
@@ -64,9 +64,9 @@ const config: Config = {
           600: "#856428",
         },
         // === Text ===
-        espresso: "#121A2B",       // headings (deep navy-charcoal ink)
-        cocoa: "#3A4358",          // body (slate-navy graphite)
-        mocha: "#6B7488",          // muted (slate)
+        espresso: "#221810",       // headings (deep navy-charcoal ink)
+        cocoa: "#4F4034",          // body (slate-navy graphite)
+        mocha: "#86705D",          // muted (slate)
         // === Borders / dividers ===
         adobe: "#E0D9CC",          // adobe / warm stone border
         adobeDark: "#CDC4B2",
@@ -85,17 +85,17 @@ const config: Config = {
         "sunrise-bands":
           "linear-gradient(180deg, #FBF8F3 0%, #F4EFE4 40%, #F6EFE0 70%, #FBF8F3 100%)",
         "warm-radial":
-          "radial-gradient(circle at 30% 20%, rgba(122,46,58,0.10) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(27,42,78,0.08) 0%, transparent 55%)",
-        "clay-gradient": "linear-gradient(135deg, #1B2A4E 0%, #2A3E6E 100%)",
-        "sage-gradient": "linear-gradient(135deg, #7A2E3A 0%, #9A4551 100%)",
+          "radial-gradient(circle at 30% 20%, rgba(107,59,31,0.10) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(65,36,19,0.08) 0%, transparent 55%)",
+        "clay-gradient": "linear-gradient(135deg, #412413 0%, #60351C 100%)",
+        "sage-gradient": "linear-gradient(135deg, #6B3B1F 0%, #904F2A 100%)",
         "gold-gradient": "linear-gradient(135deg, #C9A24B 0%, #DCC083 100%)",
       },
       boxShadow: {
-        warm: "0 10px 40px -15px rgba(27, 42, 78, 0.22), 0 4px 12px -6px rgba(18, 26, 43, 0.08)",
-        "warm-lg": "0 30px 70px -20px rgba(27, 42, 78, 0.28), 0 10px 30px -10px rgba(18, 26, 43, 0.10)",
-        card: "0 2px 8px -2px rgba(18, 26, 43, 0.06), 0 1px 3px -1px rgba(18, 26, 43, 0.04)",
-        "card-hover": "0 20px 50px -15px rgba(27, 42, 78, 0.24), 0 8px 20px -8px rgba(18, 26, 43, 0.10)",
-        arch: "inset 0 -8px 30px -10px rgba(27, 42, 78, 0.10)",
+        warm: "0 10px 40px -15px rgba(65, 36, 19, 0.22), 0 4px 12px -6px rgba(34, 24, 16, 0.08)",
+        "warm-lg": "0 30px 70px -20px rgba(65, 36, 19, 0.28), 0 10px 30px -10px rgba(34, 24, 16, 0.10)",
+        card: "0 2px 8px -2px rgba(34, 24, 16, 0.06), 0 1px 3px -1px rgba(34, 24, 16, 0.04)",
+        "card-hover": "0 20px 50px -15px rgba(65, 36, 19, 0.24), 0 8px 20px -8px rgba(34, 24, 16, 0.10)",
+        arch: "inset 0 -8px 30px -10px rgba(65, 36, 19, 0.10)",
       },
       keyframes: {
         "fade-up": {

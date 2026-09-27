@@ -23,7 +23,7 @@ export function CTABand({
               className="absolute inset-0 opacity-70"
               style={{
                 background:
-                  "radial-gradient(circle at 20% 20%, rgba(201,162,75,0.18) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(122,46,58,0.22) 0%, transparent 50%)",
+                  "radial-gradient(circle at 20% 20%, rgba(201,162,75,0.18) 0%, transparent 45%), radial-gradient(circle at 80% 80%, rgba(107,59,31,0.22) 0%, transparent 50%)",
               }}
               aria-hidden
             />

@@ -16,15 +16,15 @@
     --bg-white: #FFFFFF;
 
     /* Brand */
-    --clay: #1B2A4E;           /* primary — deep navy */
-    --clay-dark: #121D38;
-    --sage: #7A2E3A;           /* secondary — wine / garnet */
+    --clay: #412413;           /* primary — deep navy */
+    --clay-dark: #2D190D;
+    --sage: #6B3B1F;           /* secondary — wine / garnet */
     --gold: #C9A24B;           /* accent — antique gold */
 
     /* Text */
-    --espresso: #121A2B;       /* headings */
-    --cocoa: #3A4358;          /* body */
-    --mocha: #6B7488;          /* muted */
+    --espresso: #221810;       /* headings */
+    --cocoa: #4F4034;          /* body */
+    --mocha: #86705D;          /* muted */
 
     /* Border */
     --adobe: #E0D9CC;          /* adobe / warm stone */
@@ -58,7 +58,7 @@
   }
 
   ::selection {
-    background: rgba(27, 42, 78, 0.16);
+    background: rgba(65, 36, 19, 0.16);
     color: var(--espresso);
   }
 }
@@ -118,7 +118,7 @@
     left: 0;
     right: 0;
     height: 6px;
-    background: linear-gradient(90deg, #1B2A4E 0%, #2A3E6E 22%, #7A2E3A 55%, #C9A24B 100%);
+    background: linear-gradient(90deg, #412413 0%, #60351C 22%, #6B3B1F 55%, #C9A24B 100%);
   }
   .pill {
     @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full
@@ -150,47 +150,47 @@
   .bg-sonoran {
     background-color: var(--bg-cream);
     background-image:
-      radial-gradient(circle at 15% 15%, rgba(122, 46, 58, 0.08) 0%, transparent 35%),
-      radial-gradient(circle at 85% 75%, rgba(27, 42, 78, 0.07) 0%, transparent 40%);
+      radial-gradient(circle at 15% 15%, rgba(107, 59, 31, 0.08) 0%, transparent 35%),
+      radial-gradient(circle at 85% 75%, rgba(65, 36, 19, 0.07) 0%, transparent 40%);
   }
   .bg-sonoran-sand {
     background-color: var(--bg-sand);
     background-image:
-      radial-gradient(circle at 70% 20%, rgba(27, 42, 78, 0.06) 0%, transparent 45%),
-      radial-gradient(circle at 20% 80%, rgba(122, 46, 58, 0.07) 0%, transparent 40%);
+      radial-gradient(circle at 70% 20%, rgba(65, 36, 19, 0.06) 0%, transparent 45%),
+      radial-gradient(circle at 20% 80%, rgba(107, 59, 31, 0.07) 0%, transparent 40%);
   }
   .bg-warm-radial {
     background:
-      radial-gradient(ellipse at top, rgba(122, 46, 58, 0.10) 0%, transparent 55%),
-      radial-gradient(ellipse at bottom right, rgba(27, 42, 78, 0.07) 0%, transparent 50%),
+      radial-gradient(ellipse at top, rgba(107, 59, 31, 0.10) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(65, 36, 19, 0.07) 0%, transparent 50%),
       var(--bg-cream);
   }
   /* Columnar band — stacked architectural column lines (navy / garnet / gold) */
   .horizon-band {
     background: linear-gradient(180deg,
-      #1B2A4E 0% 16%,
-      #2A3E6E 16% 30%,
-      #7A2E3A 30% 44%,
-      #9A4551 44% 58%,
-      #1B2A4E 58% 72%,
-      #2A3E6E 72% 86%,
+      #412413 0% 16%,
+      #60351C 16% 30%,
+      #6B3B1F 30% 44%,
+      #904F2A 44% 58%,
+      #412413 58% 72%,
+      #60351C 72% 86%,
       #C9A24B 86% 100%
     );
   }
   /* Architectural column-line texture for hero / CTA bands */
   .grain {
     background-image:
-      linear-gradient(rgba(27,42,78,0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(27,42,78,0.05) 1px, transparent 1px),
+      linear-gradient(rgba(65,36,19,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(65,36,19,0.05) 1px, transparent 1px),
       repeating-linear-gradient(92deg,
-        rgba(27,42,78,0.0) 0px,
-        rgba(27,42,78,0.0) 10px,
+        rgba(65,36,19,0.0) 0px,
+        rgba(65,36,19,0.0) 10px,
         rgba(255,255,255,0.025) 10px,
         rgba(255,255,255,0.025) 11px);
     background-size: 48px 48px, 48px 48px, auto;
   }
   .dotted-warm {
-    background-image: radial-gradient(circle, rgba(27, 42, 78, 0.14) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(65, 36, 19, 0.14) 1px, transparent 1px);
     background-size: 24px 24px;
   }
   /* Column divider — short stacked classical column line */
@@ -207,10 +207,10 @@
     width: 10rem;
     height: 1.4rem;
     background: linear-gradient(90deg,
-      #1B2A4E 0% 16%,
-      #2A3E6E 16% 38%,
-      #7A2E3A 38% 60%,
-      #2A3E6E 60% 82%,
+      #412413 0% 16%,
+      #60351C 16% 38%,
+      #6B3B1F 38% 60%,
+      #60351C 60% 82%,
       #C9A24B 82% 100%);
     border-radius: 0.5rem;
     opacity: 0.92;
@@ -243,7 +243,7 @@
     top: 0.55em;
     width: 1.1rem;
     height: 0.5rem;
-    background: linear-gradient(90deg, #1B2A4E 0% 30%, #7A2E3A 30% 65%, #C9A24B 65% 100%);
+    background: linear-gradient(90deg, #412413 0% 30%, #6B3B1F 30% 65%, #C9A24B 65% 100%);
     border-radius: 0.15rem;
     opacity: 0.9;
   }
