@@ -187,7 +187,7 @@ export default function QuotePage() {
                         </div>
                         <div>
                           <label htmlFor="phone" className={labelClass}>Phone *</label>
-                          <input id="phone" name="phone" type="tel" required value={formData.phone} onChange={handleChange} placeholder="(512) 555-0100" className={inputClass} />
+                          <input id="phone" name="phone" type="tel" required value={formData.phone} onChange={handleChange} placeholder="Best number to reach you" className={inputClass} />
                         </div>
                       </div>
 
