@@ -188,26 +188,4 @@ export const STATS = [
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    quote:
-      "When a tenant's welding operation started a fire that damaged two bays of my warehouse, my old carrier tried to deny it as a tenant-caused loss. CCA had placed a proper LRO policy with the LH-1 class code and the claim paid. They understood the building-owner side of this from day one.",
-    name: "Raymond K.",
-    role: "Commercial Property Owner",
-    location: "Texas",
-  },
-  {
-    quote:
-      "I lease flex space to a dozen contractors and was carrying a generic landlord policy with huge gaps. CCA rebuilt the whole program — LRO, commercial property, equipment breakdown, and an umbrella — for less than I was paying before. Real specialists.",
-    name: "Patricia M.",
-    role: "Multi-Tenant Building Owner",
-    location: "Arizona",
-  },
-  {
-    quote:
-      "The rooftop HVAC on my retail center failed and the replacement plus business-interruption could have been brutal. The equipment-breakdown coverage CCA set up paid out fast and kept my tenants operating. They get what it means to own the building.",
-    name: "Daniel S.",
-    role: "Retail Center Owner",
-    location: "Florida",
-  },
-] as const;
+export const TESTIMONIALS: { quote: string; name: string; role: string; location: string }[] = [];

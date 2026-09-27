@@ -82,7 +82,7 @@ export function ServicesGrid() {
           <p className="text-mocha">
             Not sure what you need?{" "}
             <Link href="/quote" className="font-heading font-bold text-clay hover:underline">
-              Get a coverage review →
+              Get a coverage review<ArrowRight className="inline w-4 h-4 ml-1 align-[-2px]" aria-hidden="true" />
             </Link>
           </p>
         </FadeIn>
