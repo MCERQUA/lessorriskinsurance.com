@@ -1,17 +1,26 @@
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import localFont from "next/font/local";
 
 // Body font — Source Sans 3 (clean, legible for dense coverage copy)
-export const bodyFont = Source_Sans_3({
-  subsets: ["latin"],
+export const bodyFont = localFont({
+  src: [
+    { path: "./fonts/SourceSans3-variable.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/SourceSans3-variable.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/SourceSans3-variable.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/SourceSans3-variable.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-body",
-  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 // Heading font — Playfair Display (serif, premium property / classical architecture feel)
-export const headingFont = Playfair_Display({
-  subsets: ["latin"],
+export const headingFont = localFont({
+  src: [
+    { path: "./fonts/PlayfairDisplay-variable.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/PlayfairDisplay-variable.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/PlayfairDisplay-variable.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/PlayfairDisplay-variable.woff2", weight: "800", style: "normal" },
+  ],
   variable: "--font-heading",
-  weight: ["400", "600", "700", "800"],
   display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
