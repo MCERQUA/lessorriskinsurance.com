@@ -35,13 +35,20 @@ export default function ContactPage() {
     setSubmitting(true);
     setError("");
     try {
-      const res = await fetch(WEBHOOK_URL, {
+      let stored = false;
+      try {
+        const res = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ form_name: "contact", source: "lessorriskinsurance.com", ...formData }),
       });
-      // fetch() resolves on a 4xx/5xx, so the status is what says the lead was taken.
-      if (!res.ok) throw new Error(String(res.status));
+        // The webhook answers 200 with stored:false when it did not store the lead.
+        if (res.ok) { const j = await res.json().catch(() => null); stored = !j || j.stored !== false; }
+      } catch { /* fall through to Netlify Forms */ }
+      if (!stored) {
+        const fb = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams({ "form-name": "contact", ...formData }).toString() });
+        if (!fb.ok) throw new Error(String(fb.status));
+      }
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us at 844-967-5247.");
