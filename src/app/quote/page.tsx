@@ -1,16 +1,39 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE } from "@/lib/site";
-import { US_STATES, QUOTE_SERVICE_TYPES, YEARS_OPTIONS } from "@/lib/content";
-import { CheckCircle2, ShieldCheck, ArrowRight, Phone, Clock, Zap, MapPin } from "lucide-react";
+import { QUOTE_SERVICE_TYPES, YEARS_OPTIONS } from "@/lib/content";
+import { QuoteForm, type LegacyQuestion } from "@/components/quote/QuoteForm";
+import { ShieldCheck, Phone, Clock, Zap, MapPin } from "lucide-react";
 
 const WEBHOOK_URL =
   "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=lessorriskinsurance.com";
+
+const LESSOR_TYPES = [
+  "Lessor's Risk Only (landlord of commercial buildings)",
+  "Commercial property owner / landlord",
+  "Property management company",
+  "Other",
+];
+
+// Pre-port field names with no canonical twin: still posted under their own names (optional).
+const LEGACY: LegacyQuestion[] = [
+  { name: "serviceType", label: "What do you need?", type: "select", options: QUOTE_SERVICE_TYPES },
+  { name: "yearsInBusiness", label: "Years in business", type: "select", options: YEARS_OPTIONS },
+  { name: "equipmentYear", label: "Equipment year", type: "number" },
+  { name: "equipmentMake", label: "Equipment make" },
+  { name: "equipmentModel", label: "Equipment model" },
+  { name: "equipmentSerialNumber", label: "Equipment serial number" },
+  { name: "equipmentValue", label: "Equipment value ($)" },
+];
+
+// Pre-port names that mirror a canonical answer the shared form already asks: derived, never asked twice.
+const deriveLegacy = (d: Record<string, string>): Record<string, string> => ({
+  streetAddress: d.address ?? "",
+  message: d.notes ?? "",
+});
 
 const trustItems = [
   { icon: ShieldCheck, title: "Built for landlords", desc: "Policies written for commercial property owners who lease to tenants — not generic small-business coverage." },
@@ -20,66 +43,6 @@ const trustItems = [
 ];
 
 export default function QuotePage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    businessName: "",
-    email: "",
-    phone: "",
-    state: "",
-    serviceType: "",
-    yearsInBusiness: "",
-    message: "",
-    "bot-field": "",
-    streetAddress: "",
-    fein: "",
-    equipmentYear: "",
-    equipmentMake: "",
-    equipmentModel: "",
-    equipmentSerialNumber: "",
-    equipmentValue: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (formData["bot-field"]) return;
-    setSubmitting(true);
-    setError("");
-    try {
-      let stored = false;
-      try {
-        const res = await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ form_name: "quote", source: "lessorriskinsurance.com", ...formData }),
-      });
-        // The webhook answers 200 with stored:false when it did not store the lead.
-        if (res.ok) { const j = await res.json().catch(() => null); stored = !!(j && j.ok === true && j.stored !== false); }
-      } catch { /* fall through to Netlify Forms */ }
-      if (!stored) {
-        const fb = await fetch("/__forms.html", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams({ "form-name": "quote", ...formData }).toString() });
-        if (!fb.ok) throw new Error(String(fb.status));
-      }
-      setSubmitted(true);
-    } catch {
-      setError("Something went wrong. Please call us at 844-967-5247 or try again.");
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
-  const inputClass =
-    "w-full px-4 py-3 rounded-xl border border-adobe bg-cream/50 text-espresso placeholder-mocha/60 focus:outline-none focus:border-clay focus:ring-2 focus:ring-clay/20 transition-all text-sm";
-  const labelClass = "block text-sm font-heading font-semibold text-espresso mb-1.5";
-
   return (
     <>
       <Navbar />
@@ -133,134 +96,23 @@ export default function QuotePage() {
 
               {/* Form */}
               <div className="lg:col-span-2">
-                {submitted ? (
-                  <FadeIn>
-                    <div className="p-10 md:p-12 rounded-3xl bg-white border border-adobe shadow-card text-center">
-                      <div className="w-16 h-16 rounded-full bg-sage/15 flex items-center justify-center mx-auto mb-4">
-                        <CheckCircle2 className="h-8 w-8 text-sage" />
-                      </div>
-                      <h2 className="font-heading font-extrabold text-espresso text-2xl mb-3">
-                        Quote request received
-                      </h2>
-                      <p className="text-mocha mb-2">
-                        Thank you! We&rsquo;ll review your operation and reach out within one
-                        business day with personalized quotes.
-                      </p>
-                      <p className="text-sm text-mocha">
-                        Need it sooner? Call{" "}
-                        <a href={SITE.phoneHref} className="text-clay font-heading font-semibold">
-                          {SITE.phone}
-                        </a>
-                        .
-                      </p>
-                      <Link href="/" className="btn-secondary mt-6 inline-flex">
-                        Back to home
-                      </Link>
-                    </div>
-                  </FadeIn>
-                ) : (
-                  <FadeIn>
-                    <form
-                      name="quote"
-                      data-netlify="true"
-                      netlify-honeypot="bot-field"
-                      onSubmit={handleSubmit}
-                      className="rounded-3xl bg-white border border-adobe shadow-card p-7 md:p-9 space-y-5"
-                    >
-                      <input type="hidden" name="form-name" value="quote" />
-                      <input
-                        name="bot-field"
-                        type="hidden"
-                        value={formData["bot-field"]}
-                        onChange={handleChange}
-                        className="hidden"
-                      />
-
-                      <div className="grid sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="name" className={labelClass}>Full name *</label>
-                          <input id="name" name="name" type="text" required value={formData.name} onChange={handleChange} placeholder="Jane Smith" className={inputClass} />
-                        </div>
-                        <div>
-                          <label htmlFor="businessName" className={labelClass}>Business name *</label>
-                          <input id="businessName" name="businessName" type="text" required value={formData.businessName} onChange={handleChange} placeholder="Maple Avenue Properties LLC" className={inputClass} />
-                        </div>
-                      </div>
-
-                      <div className="grid sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="email" className={labelClass}>Email *</label>
-                          <input id="email" name="email" type="email" required value={formData.email} onChange={handleChange} placeholder="jane@mapleproperties.com" className={inputClass} />
-                        </div>
-                        <div>
-                          <label htmlFor="phone" className={labelClass}>Phone *</label>
-                          <input id="phone" name="phone" type="tel" required value={formData.phone} onChange={handleChange} placeholder="Best number to reach you" className={inputClass} />
-                        </div>
-                      </div>
-
-                      <div className="grid sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="state" className={labelClass}>Primary state *</label>
-                          <select id="state" name="state" required value={formData.state} onChange={handleChange} className={inputClass}>
-                            <option value="">Select a state…</option>
-                            {US_STATES.map((s) => (<option key={s} value={s}>{s}</option>))}
-                          </select>
-                        </div>
-                        <div>
-                          <label htmlFor="yearsInBusiness" className={labelClass}>Years in business</label>
-                          <select id="yearsInBusiness" name="yearsInBusiness" value={formData.yearsInBusiness} onChange={handleChange} className={inputClass}>
-                            <option value="">Select…</option>
-                            {YEARS_OPTIONS.map((y) => (<option key={y} value={y}>{y}</option>))}
-                          </select>
-                        </div>
-                      </div>
-
-                      <div>
-                        <label htmlFor="serviceType" className={labelClass}>What do you need? *</label>
-                        <select id="serviceType" name="serviceType" required value={formData.serviceType} onChange={handleChange} className={inputClass}>
-                          <option value="">Select coverage…</option>
-                          {QUOTE_SERVICE_TYPES.map((s) => (<option key={s} value={s}>{s}</option>))}
-                        </select>
-                      </div>
-
-                      <div className="grid sm:grid-cols-2 gap-4">
-                        <div><label htmlFor="streetAddress" className={labelClass}>Street Address *</label><input id="streetAddress" name="streetAddress" type="text" required value={formData.streetAddress} onChange={handleChange} className={inputClass} /></div>
-                        <div><label htmlFor="fein" className={labelClass}>FEIN (Federal Tax ID) *</label><input id="fein" name="fein" type="text" required value={formData.fein} onChange={handleChange} className={inputClass} /></div>
-                        <div><label htmlFor="equipmentYear" className={labelClass}>Equipment Year *</label><input id="equipmentYear" name="equipmentYear" type="number" required value={formData.equipmentYear} onChange={handleChange} className={inputClass} /></div>
-                        <div><label htmlFor="equipmentMake" className={labelClass}>Equipment Make *</label><input id="equipmentMake" name="equipmentMake" type="text" required value={formData.equipmentMake} onChange={handleChange} className={inputClass} /></div>
-                        <div><label htmlFor="equipmentModel" className={labelClass}>Equipment Model *</label><input id="equipmentModel" name="equipmentModel" type="text" required value={formData.equipmentModel} onChange={handleChange} className={inputClass} /></div>
-                        <div><label htmlFor="equipmentSerialNumber" className={labelClass}>Equipment Serial Number *</label><input id="equipmentSerialNumber" name="equipmentSerialNumber" type="text" required value={formData.equipmentSerialNumber} onChange={handleChange} className={inputClass} /></div>
-                        <div><label htmlFor="equipmentValue" className={labelClass}>Equipment Value ($) *</label><input id="equipmentValue" name="equipmentValue" type="text" required value={formData.equipmentValue} onChange={handleChange} className={inputClass} /></div>
-                      </div>
-
-                      <div>
-                        <label htmlFor="message" className={labelClass}>
-                          Tell us about your building{" "}
-                          <span className="text-mocha/60 font-normal">(optional)</span>
-                        </label>
-                        <textarea
-                          id="message" name="message" rows={4} value={formData.message}
-                          onChange={handleChange} placeholder="Property type (warehouse, retail, flex, mixed-use), building value, square footage leased, tenant mix, construction type, coverage lines needed, current insurer, loss history, or anything else that helps us quote accurately…"
-                          className={`${inputClass} resize-none`}
-                        />
-                      </div>
-
-                      {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
-
-                      <button
-                        type="submit"
-                        disabled={submitting}
-                        className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-clay-gradient text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
-                      >
-                        {submitting ? "Sending…" : "Request my free quote"}
-                        {!submitting && <ArrowRight className="h-5 w-5" />}
-                      </button>
-                      <p className="text-xs text-center text-mocha/70">
-                        No spam. No commitment. We&rsquo;ll only contact you about your quote.
-                      </p>
-                    </form>
-                  </FadeIn>
-                )}
+                <FadeIn>
+                  <div className="rounded-3xl bg-white border border-adobe shadow-card p-7 md:p-9">
+                    <QuoteForm
+                      formName="quote"
+                      tradeName="Lessor's Risk"
+                      endpoint={WEBHOOK_URL}
+                      format="json"
+                      netlifyFallback="/__forms.html"
+                      extraFields={{ form_name: "quote", source: "lessorriskinsurance.com" }}
+                      options={{ yn: true, feinRequired: false }}
+                      tradeTypeOptions={LESSOR_TYPES}
+                      defaults={{ coverageTypes: "General Liability" }}
+                      legacyQuestions={LEGACY}
+                      deriveLegacy={deriveLegacy}
+                    />
+                  </div>
+                </FadeIn>
               </div>
             </div>
           </div>
